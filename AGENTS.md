@@ -9,7 +9,14 @@
 - 原文：仓库根目录的 **LifeWithUnux_LibesRessler.pdf**（372 页）。该文件**不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
 - `en/` — 从 PDF 提取的英文原文文本，供逐句对照翻译使用。**不要修改或翻译 `en/` 中的内容**，也不要将其当作成品引用。
 - **注意：`en/` 文本由脚本自动提取，存在少量跨行连字符重组错误（如 `front-to-back` 可能被并成 `frontto-back`）或页眉页脚残留。** 凡遇可疑之处，一律回到 PDF 核对，以 PDF 为唯一权威源；禁止以中文版既有翻译作为修改依据，避免错误沿袭。
-- **本仓库目前没有 `.github/workflows/` CI 工作流**：标题同步、目录生成、格式检查均由人工或 `script/` 下的脚本完成。不要把 FreeBSD 手册翻译项目（handbook.bsdcn.org）的 CI 假设套用到本仓库。
+- **`.github/workflows/` 下的 CI 工作流全部沿用自本社区其他项目，动作要与其约定一致**：
+  - `sync-headers.yml` — 每次推送后把各 `.md` 文件的 H1 强制改成 `SUMMARY.md` 中对应条目的文字（方向：SUMMARY → 文件 H1）。改标题只需改 `SUMMARY.md`，H1 由 CI 自动同步；本地改动后若 H1 与 SUMMARY 不一致，推送后会被 CI 覆盖。
+  - `mulu.yml` — `SUMMARY.md` 变动后自动重新生成 `mu-lu.md`（首行改为 `# 目录`）。**不要手动编辑 `mu-lu.md`**。
+  - `file-name-check.yml` — 校验 `SUMMARY.md` 中每个条目对应的文件是否存在，缺失时自动开 issue。
+  - `Markdown-lint2-pr.yml` / `markdown-lint2.yml` — markdownlint 检查（配置 `.github/.markdownlint.json`）。
+  - `md-padding.yml`、`AutoCorrect.yml` — 手动触发，自动补 CJK 与英文/数字间空格并以 PR 形式提交；合并前人工核对 diff。
+  - `check-images.yml`、`links.yml`、`create-pdf.yml`、`Auto-Assign.yml` — 图片引用、链接、PDF 导出与 issue/PR 自动分配。
+  - 不要新增与之冲突的本地规则；本地脚本（`script/`）只是 CI 的预演，结果以 CI 为准。
 
 ## 原文来源与重新提取
 
@@ -29,7 +36,7 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 ### 核心文件
 
 - **`SUMMARY.md`** — 全书唯一数据源，定义完整目录结构和导航树，GitBook 用它生成侧边栏。**第一行 `# Table of contents` 绝对不能变更**，否则 GitBook 同步失效。
-- **`mu-lu.md`** — 由 `script/gen_mulu.py` 从 `SUMMARY.md` 复制生成（`python script/gen_mulu.py`），**不要手动编辑**。
+- **`mu-lu.md`** — 由 `mulu.yml` CI 工作流从 `SUMMARY.md` 自动复制生成（本地预览可用 `python script/gen_mulu.py`），**不要手动编辑**。
 - **`yi-zhe-shuo-ming.md`** — 术语翻译对照表，所有术语翻译以此为准。新出现的人名、专有名词、产品名必须登记。
 - **`CHANGELOG.md`** — 编辑日志，记录翻译进度与整章校对完成情况。
 - **`README.md`** — 项目说明页，GitBook 首页，含书名、作者、原书简介与项目链接。
@@ -59,7 +66,7 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 ### 标题管理（关键约束）
 
-- 各 `.md` 文件的 H1 必须与 `SUMMARY.md` 中对应条目文字**完全一致**。本仓库没有自动同步的 CI，需人工同时维护两处（改标题时两处一起改）。
+- 各 `.md` 文件的 H1 必须与 `SUMMARY.md` 中对应条目文字**完全一致**；不一致时 `sync-headers.yml` 会按 `SUMMARY.md` 强制改写文件 H1。因此**改标题只改 `SUMMARY.md` 一处**，H1 交由 CI 同步（本地可用 `script/gen_mulu.py` 顺带校验）。
 - 节内 H2 及以下标题保留原书节号：`## 6.2 shell 基础`、`### 6.2.1 I/O 重定向`。H1 的写法与 SUMMARY 一致，如 `# 6.2 shell 基础`。
 
 ## 编写规范
@@ -161,12 +168,19 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 1. 用 `python script/compare_structure.py` 对比中英结构（脚本自动处理 H1/H2 层级偏移与按节号自然排序）。确认差异确属笔误后，逐个手动修复。
 2. **章号 1:1 对应**：不要保留缺失章节状态；原书有而中文缺的，必须补译。
-3. **标题**：改 `SUMMARY.md` 条目即同时手改对应 `.md` 的 H1（本仓库无自动同步 CI）。
+3. **标题**：改 `SUMMARY.md` 条目即可，文件 H1 由 `sync-headers.yml` CI 自动同步（本地可手改保持一致）。
 4. **重命名**：涉及章号偏移时从最大章号倒序处理，先改文件内节号，再改文件名前缀、目录名，最后同步 `SUMMARY.md`，并修复跨章 markdown 链接路径。
 5. 修改完成后重新运行结构对比脚本，确认差异为 0。
 6. 临时脚本与日志统一放在 `script/` 目录。
 
 ## 本地工具
+
+- **引号检查**（`script/check_quotes.py`）：检查正文引号是否为成对、方向正确的中文弯引号，并排查直引号与直角引号（代码块与行内代码自动豁免，英文词内撇号不算引号）：
+
+  ```sh
+  python script/check_quotes.py          # 检查全部内容 .md
+  python script/check_quotes.py 路径...   # 只检查指定文件/目录
+  ```
 
 - **markdownlint**（配置 `.github/.markdownlint.json`）：本地已装 `markdownlint-cli2`，在仓库根目录执行：
 
