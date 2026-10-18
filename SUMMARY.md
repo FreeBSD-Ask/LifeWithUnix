@@ -142,3 +142,4 @@
 ## 附录
 
 * [附录 A：地址](fu-lu-a-di-zhi.md)
+* [术语表](yi-zhe-shuo-ming.md)
