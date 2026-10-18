@@ -49,8 +49,8 @@
 | How To Read This Book | 如何阅读本书 | 前言次篇 |
 | Disclaimers | 免责声明 | 前言小节 |
 | Acknowledgments | 致谢 | 前言小节 |
-| Dialects | 方言 | "如何阅读本书"小节，指 UNIX 各方言/变体 |
-| Typographical Notes | 排版说明 | "如何阅读本书"小节 |
+| Dialects | 方言 | “如何阅读本书”小节，指 UNIX 各方言/变体 |
+| Typographical Notes | 排版说明 | “如何阅读本书”小节 |
 | Appendix A: Addresses | 附录 A：地址 | |
 | Index | 索引 | 不翻译 |
 
@@ -58,16 +58,16 @@
 
 | 英文 | 中文 | 备注 |
 | ---- | ---- | ---- |
-| shell | shell | 不译"壳/外壳"；`csh`、`sh`、Bourne shell 等保持原样 |
+| shell | shell | 不译“壳/外壳”；`csh`、`sh`、Bourne shell 等保持原样 |
 | kernel | 内核 | |
 | daemon | 守护进程 | |
 | device driver | 设备驱动程序 | |
 | file system | 文件系统 | |
 | source (code) | 源码 | |
 | public domain / public-domain | 公有领域 | |
-| free software | 免费软件 | 1980 年代语境；GNU 语境下的 "free" 按"自由"处理 |
+| free software | 免费软件 | 1980 年代语境；GNU 语境下的 “free” 按“自由”处理 |
 | timesharing | 分时 | |
-| port / porting | 移植 | "portability" → 可移植性 |
+| port / porting | 移植 | “portability” → 可移植性 |
 | clone / cloner | 克隆 / 克隆厂商 | work-alike → 仿制品 |
 | dump | 转储 | |
 | backup | 备份 | |

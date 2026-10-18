@@ -1,6 +1,8 @@
 # 《UNIX 生活：写给每个人的指南》
 
-本项目是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*）的简体中文翻译，由 FreeBSD 中文社区译制。原书版权归著作权人及出版社所有，本书仅供学习交流使用。
+本项目是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*）的简体中文翻译，由 FreeBSD 中文社区译制。
+
+原书版权归著作权人及出版社所有，本书仅供学习交流使用。
 
 ---
 
@@ -52,3 +54,5 @@ Don Libes 与 Sandy Ressler 都是 UNIX 的老用户和推广者。Don Libes 后
 ## 版权说明
 
 原书 *Life With UNIX: A Guide For Everyone* 版权归 Don Libes、Sandy Ressler 及 Prentice Hall 所有。本翻译项目不对原文主张任何权利，翻译内容供学习、研究与交流使用。如权利人提出异议，我们将立即配合处理。
+
+本项目遵循 [BSD 2-Clause 许可证](LICENSE)。
