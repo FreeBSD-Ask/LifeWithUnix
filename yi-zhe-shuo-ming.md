@@ -8,6 +8,12 @@
 | ---- | ---- | ---- |
 | Life With UNIX: A Guide For Everyone | UNIX 生活：写给每个人的指南 | 全书标题 |
 | Section | 部分 | 全书 4 个部分 |
+| Preface | 前言 | 前言首篇 |
+| How To Read This Book | 如何阅读本书 | 前言次篇 |
+| Disclaimers | 免责声明 | 前言小节 |
+| Acknowledgments | 致谢 | 前言小节 |
+| Dialects | 方言 | “如何阅读本书”小节，指 UNIX 各方言/变体 |
+| Typographical Notes | 排版说明 | “如何阅读本书”小节 |
 | Appendix A: Addresses | 附录 A：地址 | |
 | Index | 索引 | 不翻译 |
 
@@ -42,6 +48,9 @@
 | superuser / root | 超级用户 / root | |
 | setuid | setuid | 不翻译 |
 | quirk | 怪癖 | |
+| dialect | 方言 | UNIX dialects → UNIX 方言 |
+| computer font | 等宽字体 | 原书排版术语，首次出现可括注 computer font |
+| virgin (software) | 未经改动的 | 不直译“原始的/全新的”，按上下文处理 |
 | bug | bug | 不译为"缺陷"以外词；正式处可用"程序错误" |
 | undocumented | 未公开文档的 | |
 | benchmark | 基准测试 | |
