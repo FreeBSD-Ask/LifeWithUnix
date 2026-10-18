@@ -91,8 +91,8 @@
 | quirk | 怪癖 | |
 | dialect | 方言 | UNIX dialects → UNIX 方言 |
 | computer font | 等宽字体 | 原书排版术语，首次出现可括注 computer font |
-| virgin (software) | 未经改动的 | 不直译"原始的/全新的"，按上下文处理 |
-| bug | bug | 正式处可用"程序错误" |
+| virgin (software) | 未经改动的 | 不直译“原始的/全新的”，按上下文处理 |
+| bug | bug | 正式处可用“程序错误” |
 | undocumented | 未公开文档的 | |
 | benchmark | 基准测试 | |
 | transaction processing | 事务处理 | |
@@ -130,7 +130,7 @@
 | wizard | 巫师 | 保留原书调侃口吻 |
 | guru | 大师 | |
 | hack / hacker | 黑客 / 捣鼓 | 原书语境多为中性或褒义，按上下文处理 |
-| vanilla | 原味 | 不译"香草" |
+| vanilla | 原味 | 不译“香草” |
 | bug report | bug 报告 | |
 | trademark | 商标 | |
 | license / licensing | 许可 | |
@@ -160,17 +160,17 @@
 
 | 英文 | 中文 | 备注 |
 | ---- | ---- | ---- |
-| See Chapter 5 | 相关讨论见"××"一节 | 避免硬编码"参见第 5 章"，改语义化链接 |
+| See Chapter 5 | 相关讨论见“××”一节 | 避免硬编码“参见第 5 章”，改语义化链接 |
 | see Appendix A | 参见[附录 A（地址）](fu-lu-a-di-zhi.md) | |
 | we | 我们 | 原书第一人称，保留 |
-| you | 你 | 一律"你"，不用"您" |
+| you | 你 | 一律“你”，不用“您” |
 | in other words | 换句话说 | |
 | for example / e.g. | 例如 | |
 | that is / i.e. | 也就是 | |
 
 ## 版本与年代写法
 
-* 年代：1970 年代、1980 年代（不加"二十世纪"）
+* 年代：1970 年代、1980 年代（不加“二十世纪”）
 * 版本号：V7、System V Release 4（首次出现全称，后可作 SVR4）
-* 页码引用：原书页码仅在必要时以"（原书第 X 页）"形式保留
-* 价格：保留美元原值，如 "$995"，不换算
+* 页码引用：原书页码仅在必要时以“（原书第 X 页）”形式保留
+* 价格：保留美元原值，如 “$995”，不换算

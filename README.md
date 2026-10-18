@@ -1,4 +1,4 @@
-# 《UNIX 生活：写给每个人的指南》
+# UNIX 生活：写给每个人的指南
 
 本项目是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*）的简体中文翻译，由 FreeBSD 中文社区译制。
 

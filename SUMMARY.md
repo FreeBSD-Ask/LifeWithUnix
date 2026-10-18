@@ -1,6 +1,6 @@
 # Table of contents
 
-* [《UNIX 生活：写给每个人的指南》](README.md)
+* [UNIX 生活：写给每个人的指南](README.md)
 * [前言](qian-yan/qian-yan.md)
 * [如何阅读本书](qian-yan/ru-he-yue-du-ben-shu.md)
 
