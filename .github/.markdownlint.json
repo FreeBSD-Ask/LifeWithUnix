@@ -1,8 +1,7 @@
 {
 	"MD001": true,
 	"MD003": true,
-	"MD004": true,
-	{
+	"MD004": {
 		"style": "asterisk"
 	},
 	"MD005": true,
