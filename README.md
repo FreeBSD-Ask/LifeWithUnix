@@ -35,7 +35,9 @@
 
 **关于作者**
 
-Don Libes 与 Sandy Ressler 都是 UNIX 的老用户和推广者。Don Libes 后来以 NIST 的 Expect 工具闻名于世。本书写作时，两人都在美国国家标准与技术研究院（NIST）工作，本书的写作、编辑与排版全程在 UNIX 工作站上完成——用作者自己的话说，这在当时本身就是一件值得写进书里的事。
+Don Libes 与 Sandy Ressler 都是 UNIX 的老用户和推广者。Don Libes 后来以 Expect 工具闻名于世，该书署名"Life With UNIX 合著者，其他乏善可陈"，就出自本书作者自己编写的人物志。
+
+本书的编辑与排版全程在一台运行 UNIX 的 Sun Microsystems 工作站上用 Frame Maker 完成，成书胶片由 PostScript 文件经 Linotronic 100P 照排机输出——用作者自己的话说，这在当时本身就是一件值得写进书里的事。
 
 ---
 
