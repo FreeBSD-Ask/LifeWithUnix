@@ -126,6 +126,13 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 * 只提交与本次工作相关的 `.md`/脚本文件；`.gitbook/assets/` 的改动单独提交并在信息中注明。`en/`、`script/`、PDF 均被 `.gitignore` 排除，不要强行加入版本控制。
 * 直接提交到 `main` 分支；未经用户要求不要 push、不要 force 操作。
 
+## 任务书、检查点与进度（接手必读）
+
+* 开始任何校对或接手会话前，先读 `PROJECT-PROGRESS.md` 顶部的当前任务、当前轮次与下一步，再读 `PROJECT-TASKS.md` 的范围、四轮要求与执行协议。
+* 验收标准以 `PROJECT-CHECKPOINTS.md` 为准；每个单元完成后必须运行其中的引号与 markdownlint 检查。
+* 每完成一轮、每次提交、每次遇到阻塞或改变方案、每次会话结束，都必须同步更新 `PROJECT-PROGRESS.md`；未执行的轮次不得勾选。
+* `script/review-progress.md` 已冻结，只是本地历史记录；不要在其中继续记录进度。
+
 ## 翻译校对工作流
 
 ### 新内容翻译
