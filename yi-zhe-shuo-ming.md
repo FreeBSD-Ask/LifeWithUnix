@@ -80,6 +80,11 @@
 | pty / pseudo-tty | 伪终端 | master/slave → 主端/从端 |
 | virtual operating system / VOS | 虚拟操作系统（VOS） | Software Tools 项目的 VOS，首次出现括注 |
 | link | 链接 | |
+| mailer | 邮件投递程序 | 指负责实际投递邮件的程序 |
+| phototypesetter | 照相排版机 | |
+| daisy-wheel printer | 菊花轮打印机 | |
+| electrostatic printer | 静电打印机 | |
+| keyed record | 键控记录 | 不作“键值”，避免现代 NoSQL 联想 |
 | backup | 备份 | |
 | boot / booting | 引导 | reboot → 重启 |
 | account | 账户 | |
@@ -131,7 +136,7 @@
 | vertical software | 垂直软件 | |
 | desktop publishing | 桌面出版 | |
 | office automation | 办公自动化 | |
-| fourth generation language | 第四代语言 | |
+| fourth generation language | 第四代语言 | 3GL → 第三代语言 |
 | spreadsheet | 电子表格 | |
 | DBMS | 数据库管理系统 | |
 | artificial intelligence | 人工智能 | |
@@ -162,7 +167,7 @@
 
 * **操作系统与产品**：UNIX、Unix（原书刻意小写处保留）、BSD、Berkeley UNIX、System V、System III、XENIX、Mach、SunOS、ULTRIX、AIX、A/UX、HP-UX、Xenix、POSIX、X/Open、OSF、UI、SVR4
 * **公司与机构**：AT&T、Bell Labs（贝尔实验室）、DEC、Sun Microsystems、IBM、HP、Xerox、Microsoft、SCO、UniSoft、MIPS、Motorola、NCR、Apollo、Siemens、Philips、Olivetti、NEC、Fujitsu、Hitachi、Toshiba、ICL、Bull、USENIX、EUUG、/usr/group、IEEE、ANSI、ISO、NBS、MITI、GNU、FSF、NASA、DARPA、ARPA
-* **软件与工具**：uucp、Usenet、vi、ed、Emacs、GNU Emacs、sed、awk、grep、find、xargs、make、SCCS、RCS、yacc、lex、lint、curses、adb、sdb、dbx、csh、ksh、sh、bash、termcap、terminfo、stty、init、getty、cron、sendmail、rn、readnews、vnews、nn、Minitab、Mathematica、Lotus 1-2-3、dBASE、Ingres、Oracle、Sybase、Informix、Unify、Empress、X11、NeWS、PostScript、makefile、bss、a.out
+* **软件与工具**：uucp、Usenet、vi、ed、Emacs、GNU Emacs、sed、awk、grep、find、xargs、make、SCCS、RCS、yacc、lex、lint、curses、adb、sdb、dbx、csh、ksh、sh、bash、termcap、terminfo、stty、init、getty、cron、sendmail、rn、readnews、vnews、nn、Minitab、Mathematica、Lotus 1-2-3、dBASE、Ingres、Oracle、Sybase、Informix、Unify、Empress、X11、NeWS、PostScript、makefile、bss、a.out、Toolchest
 * **UNIX 版本**：V6、V7、Version 7、Research UNIX、PWB、MERT、TS 1.0
 * **人名**：一律保留英文原名，不音译。如 Ken Thompson、Dennis Ritchie、Brian Kernighan、Bill Joy、Eric Allman、Kirk McKusick、Rob Pike、Doug McIlroy、Alfred Aho、Peter Weinberger、Mike Lesk、Stephen Bourne、David Korn、Andrew Tanenbaum、Richard Stallman、Steve Jobs、Bill Gates、Grace Hopper、John Lions 等。
 
