@@ -196,7 +196,7 @@ EOF
 交接或换会话前逐项确认：
 
 * [ ] `git status --short` 为空。
-* [ ] `git log --oneline -1` 与 `PROJECT-PROGRESS.md` 顶部的 HEAD 一致。
+* [ ] `PROJECT-PROGRESS.md` 顶部的“最近内容提交”存在于 `git log` 中；其后的提交只应是进度书自身的更新。
 * [ ] `PROJECT-PROGRESS.md` 的“当前任务”“当前轮次”“下一步”均非空。
 * [ ] 没有仍在运行、尚未回收的子代理。
 * [ ] 最近检查结果已按实际输出记录。
