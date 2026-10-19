@@ -6,17 +6,17 @@
 
 这是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*，Don Libes 与 Sandy Ressler 著，Prentice Hall 1989 年出版）的简体中文翻译项目，由 FreeBSD 中文社区译制，基于 GitBook 格式发布。
 
-- 原文：仓库根目录的 **LifeWithUnux_LibesRessler.pdf**（372 页）。该文件**不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
-- `en/` — 从 PDF 提取的英文原文文本，供逐句对照翻译使用。**不要修改或翻译 `en/` 中的内容**，也不要将其当作成品引用。
-- **注意：`en/` 文本由脚本自动提取，存在少量跨行连字符重组错误（如 `front-to-back` 可能被并成 `frontto-back`）或页眉页脚残留。** 凡遇可疑之处，一律回到 PDF 核对，以 PDF 为唯一权威源；禁止以中文版既有翻译作为修改依据，避免错误沿袭。
-- **`.github/workflows/` 下的 CI 工作流全部沿用自本社区其他项目，动作要与其约定一致**：
-  - `sync-headers.yml` — 每次推送后把各 `.md` 文件的 H1 强制改成 `SUMMARY.md` 中对应条目的文字（方向：SUMMARY → 文件 H1）。改标题只需改 `SUMMARY.md`，H1 由 CI 自动同步；本地改动后若 H1 与 SUMMARY 不一致，推送后会被 CI 覆盖。
-  - `mulu.yml` — `SUMMARY.md` 变动后自动重新生成 `mu-lu.md`（首行改为 `# 目录`）。**不要手动编辑 `mu-lu.md`**。
-  - `file-name-check.yml` — 校验 `SUMMARY.md` 中每个条目对应的文件是否存在，缺失时自动开 issue。
-  - `Markdown-lint2-pr.yml` / `markdown-lint2.yml` — markdownlint 检查（配置 `.github/.markdownlint.json`）。
-  - `md-padding.yml`、`AutoCorrect.yml` — 手动触发，自动补 CJK 与英文/数字间空格并以 PR 形式提交；合并前人工核对 diff。
-  - `check-images.yml`、`links.yml`、`create-pdf.yml`、`Auto-Assign.yml` — 图片引用、链接、PDF 导出与 issue/PR 自动分配。
-  - 不要新增与之冲突的本地规则；本地脚本（`script/`）只是 CI 的预演，结果以 CI 为准。
+* 原文：仓库根目录的 **LifeWithUnux_LibesRessler.pdf**（372 页）。该文件**不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
+* `en/` — 从 PDF 提取的英文原文文本，供逐句对照翻译使用。**不要修改或翻译 `en/` 中的内容**，也不要将其当作成品引用。
+* **注意：`en/` 文本由脚本自动提取，存在少量跨行连字符重组错误（如 `front-to-back` 可能被并成 `frontto-back`）或页眉页脚残留。** 凡遇可疑之处，一律回到 PDF 核对，以 PDF 为唯一权威源；禁止以中文版既有翻译作为修改依据，避免错误沿袭。
+* **`.github/workflows/` 下的 CI 工作流全部沿用自本社区其他项目，动作要与其约定一致**：
+  * `sync-headers.yml` — 每次推送后把各 `.md` 文件的 H1 强制改成 `SUMMARY.md` 中对应条目的文字（方向：SUMMARY → 文件 H1）。改标题只需改 `SUMMARY.md`，H1 由 CI 自动同步；本地改动后若 H1 与 SUMMARY 不一致，推送后会被 CI 覆盖。
+  * `mulu.yml` — `SUMMARY.md` 变动后自动重新生成 `mu-lu.md`（首行改为 `# 目录`）。**不要手动编辑 `mu-lu.md`**。
+  * `file-name-check.yml` — 校验 `SUMMARY.md` 中每个条目对应的文件是否存在，缺失时自动开 issue。
+  * `Markdown-lint2-pr.yml` / `markdown-lint2.yml` — markdownlint 检查（配置 `.github/.markdownlint.json`）。
+  * `md-padding.yml`、`AutoCorrect.yml` — 手动触发，自动补 CJK 与英文/数字间空格并以 PR 形式提交；合并前人工核对 diff。
+  * `check-images.yml`、`links.yml`、`create-pdf.yml`、`Auto-Assign.yml` — 图片引用、链接、PDF 导出与 issue/PR 自动分配。
+  * 不要新增与之冲突的本地规则；本地脚本（`script/`）只是 CI 的预演，结果以 CI 为准。
 
 ## 原文来源与重新提取
 
@@ -27,21 +27,21 @@ python script/extract_pdf.py   # 生成 en/lifewithunix-full.txt（含 [[PAGE n]
 python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等文件
 ```
 
-- `script/extract_pdf.py` 按坐标过滤页眉（y < 60）与页脚页码（y > 735），并重组跨行连字符。
-- `script/split_en.py` 依据印刷目录与章标题切分，产出 20 个文件：`01-preface`、`02-how-to-read-this-book`、各分部分隔页、`04-ch01-unix-history` … `19-appendix-a-addresses`、`20-index`。
-- 若 PDF 有更新或提取有误，直接修改脚本后重新运行，不要在 `en/` 中手工修补文本。
+* `script/extract_pdf.py` 按坐标过滤页眉（y < 60）与页脚页码（y > 735），并重组跨行连字符。
+* `script/split_en.py` 依据印刷目录与章标题切分，产出 20 个文件：`01-preface`、`02-how-to-read-this-book`、各分部分隔页、`04-ch01-unix-history` … `19-appendix-a-addresses`、`20-index`。
+* 若 PDF 有更新或提取有误，直接修改脚本后重新运行，不要在 `en/` 中手工修补文本。
 
 ## 内容架构
 
 ### 核心文件
 
-- **`SUMMARY.md`** — 全书唯一数据源，定义完整目录结构和导航树，GitBook 用它生成侧边栏。**第一行 `# Table of contents` 绝对不能变更**，否则 GitBook 同步失效。
-- **`mu-lu.md`** — 由 `mulu.yml` CI 工作流从 `SUMMARY.md` 自动复制生成（本地预览可用 `python script/gen_mulu.py`），**不要手动编辑**。
-- **`yi-zhe-shuo-ming.md`** — 术语翻译对照表，所有术语翻译以此为准。新出现的人名、专有名词、产品名必须登记。
-- **`CHANGELOG.md`** — 编辑日志，记录翻译进度与整章校对完成情况。
-- **`README.md`** — 项目说明页，GitBook 首页，含书名、作者、原书简介与项目链接。
-- **`en/`** — 英文原文（见上）。**`script/`** — 工具脚本、临时脚本与日志。
-- **`.gitbook/assets/`** — 图片资源。本书正文仅 3 张插图，已提取为 `fig-6-2-windows.png`（第 6 章窗口系统截图）、`fig-11-9-authors-screen.png`（第 11 章作者屏幕照片）、`fig-12-11-small.png`（第 12 章中文字形图）。
+* **`SUMMARY.md`** — 全书唯一数据源，定义完整目录结构和导航树，GitBook 用它生成侧边栏。**第一行 `# Table of contents` 绝对不能变更**，否则 GitBook 同步失效。
+* **`mu-lu.md`** — 由 `mulu.yml` CI 工作流从 `SUMMARY.md` 自动复制生成（本地预览可用 `python script/gen_mulu.py`），**不要手动编辑**。
+* **`yi-zhe-shuo-ming.md`** — 术语翻译对照表，所有术语翻译以此为准。新出现的人名、专有名词、产品名必须登记。
+* **`CHANGELOG.md`** — 编辑日志，记录翻译进度与整章校对完成情况。
+* **`README.md`** — 项目说明页，GitBook 首页，含书名、作者、原书简介与项目链接。
+* **`en/`** — 英文原文（见上）。**`script/`** — 工具脚本、临时脚本与日志。
+* **`.gitbook/assets/`** — 图片资源。本书正文仅 3 张插图，已提取为 `fig-6-2-windows.png`（第 6 章窗口系统截图）、`fig-11-9-authors-screen.png`（第 11 章作者屏幕照片）、`fig-12-11-small.png`（第 12 章中文字形图）。
 
 ### 目录结构
 
@@ -58,73 +58,73 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 命名与拆页规则：
 
-- **章首页**：`X.-<拼音 slug>.md`，如 `1.-unix-li-shi.md`，存放本章题记（引文）与导言。
-- **每节独立成页**：`X.Y.-<拼音 slug>.md`，如 `1.1.-chuang-shi-zhi-qian.md`、`6.2.-shell-ji-chu.md`。
-- **节内子节**：原书 `X.Y.Z` 及其以下更深的子节不单独建文件，写在同一页内。页 H1 是 `X.Y 标题`，故 `X.Y.Z` 作 **`##`（H2）**、`X.Y.Z.W` 作 **`###`（H3）**，以此类推（不能从 H1 直接跳到 H3，markdownlint MD001 会报错），如 6.2 页内含 `## 6.2.1 I/O 重定向`。
-- 文件名使用拼音 slug，不得包含空格、中文字符或英文冒号 `:`，必须兼容 Windows 对文件名的要求。
-- `SUMMARY.md` 中分部标题写作 `## 第一部分 过去、现在与未来`（纯标题，不链接文件；原书分部页除标题外无内容）；章首页与其下各节为同级 `*` 条目。
+* **章首页**：`X.-<拼音 slug>.md`，如 `1.-unix-li-shi.md`，存放本章题记（引文）与导言。
+* **每节独立成页**：`X.Y.-<拼音 slug>.md`，如 `1.1.-chuang-shi-zhi-qian.md`、`6.2.-shell-ji-chu.md`。
+* **节内子节**：原书 `X.Y.Z` 及其以下更深的子节不单独建文件，写在同一页内。页 H1 是 `X.Y 标题`，故 `X.Y.Z` 作 **`##`（H2）**、`X.Y.Z.W` 作 **`###`（H3）**，以此类推（不能从 H1 直接跳到 H3，markdownlint MD001 会报错），如 6.2 页内含 `## 6.2.1 I/O 重定向`。
+* 文件名使用拼音 slug，不得包含空格、中文字符或英文冒号 `:`，必须兼容 Windows 对文件名的要求。
+* `SUMMARY.md` 中分部标题写作 `## 第一部分 过去、现在与未来`（纯标题，不链接文件；原书分部页除标题外无内容）；章首页与其下各节为同级 `*` 条目。
 
 ### 标题管理（关键约束）
 
-- 各 `.md` 文件的 H1 必须与 `SUMMARY.md` 中对应条目文字**完全一致**；不一致时 `sync-headers.yml` 会按 `SUMMARY.md` 强制改写文件 H1。因此**改标题只改 `SUMMARY.md` 一处**，H1 交由 CI 同步（本地可用 `script/gen_mulu.py` 顺带校验）。
-- 节内 H2 及以下标题保留原书节号：`## 6.2.1 I/O 重定向`。H1 的写法与 SUMMARY 一致，如 `# 6.2 shell 基础`。
+* 各 `.md` 文件的 H1 必须与 `SUMMARY.md` 中对应条目文字**完全一致**；不一致时 `sync-headers.yml` 会按 `SUMMARY.md` 强制改写文件 H1。因此**改标题只改 `SUMMARY.md` 一处**，H1 交由 CI 同步（本地可用 `script/gen_mulu.py` 顺带校验）。
+* 节内 H2 及以下标题保留原书节号：`## 6.2.1 I/O 重定向`。H1 的写法与 SUMMARY 一致，如 `# 6.2 shell 基础`。
 
 ## 编写规范
 
 ### 格式
 
-- **章首题记**：每章开头的引文照译，格式为单独一段：`> “引文”——署名`。引文中的比喻、俚语按中文习惯改写，不要直译成生硬句子。
-- **信息框**：原书四类信息框统一用 `>` 引用块，关键词加粗，与正文之间空行分隔：
-  - `Hints & Tips` → `> **提示与技巧**`
-  - `Notes from the Underground` → `> **地下笔记**`
-  - `From the Wizards` → `> **巫师箴言**`
-  - `UNIX Funnies` → `> **UNIX 笑话**`
-  - 普通提醒用 `> **注意**`、`> **警告**`。
-- **代码块与终端摘录**：
-  - shell 命令与终端会话用 ` ```sh `，C 代码用 ` ```c `，配置文件/数据用 ` ```ini ` 或按内容选语言；**无法判断时用无语言标注的 ` ``` ` 兜底，禁止使用 `text` 作为代码块标记**。
-  - 终端会话保留原书提示符：`%`（csh）、`$`（sh）、`#`（root）。
-  - 代码块内的英文注释**必须翻译为中文**，只译注释，不得改动命令、代码、变量名与格式。
-  - 代码块与终端输出内容**禁止篡改**：软件版本号、错误信息、文件名、变量名一律保持原样（错误信息若在正文中被引用解释，正文可译、代码块内保持英文）。
-- **命令、选项、参数**：用行内代码（反引号）包裹，如 `ls -l`、`grep`。不带选项和参数的裸命令（如 mv、cp）一般不加反引号。
-- **路径与 IP**：正文中的路径（如 **/etc/passwd**、**/usr/spool**）和 IP 地址一律用 **加粗**，不用反引号包裹；不要混合使用（写成 `*`path`*` 是错误的）。代码块中的路径保持原样。
-- **表格**：一律居中。表头声明几列，所有数据行就必须有几列，缺的写 `| |`，不得省略管道符。
-- **禁止 HTML**：本项目不支持任何 HTML 语法。
-- **引号规范（重要）**：正文必须使用中文弯引号——双引号 `“ ”`、单引号 `‘ ’`（外层用双引号，引号内再引用用单引号）。**引号必须成对，且方向正确**：左引号 `“` `‘` 只用于开启，右引号 `”` `’` 只用于收束，不得混用或单边缺失。禁止英文直引号 `"` 与 `'`、禁止 `「」『』` 直角引号（代码块与行内代码内保持原样；英文单词内部的撇号如 O’Dell、don't 不算引号）。发现错误的引号要逐个手动修正，禁止机械替换。
-- **禁止 AsciiDoc 语法残留**：不允许 `xref:file[文本]`、`link:file[文本]` 等双冒号链接语法与行尾 `+` 软换行；所有段落必须在同一行内完成，不得跨行拼接。链接一律使用标准 markdown `[文本](路径或 URL)`。
-- **禁止篡改**：软件版本号、人名、书名、URL、邮箱、带圈数字（如 ①②③）等必须与原文一致，位置和数量不得变动。
-- **避免滥用“已”字**：如“XX 已新增”应改为“新增 XX”。禁止机械替换。
-- **避免章节交叉引用**：正文不要出现“参见第 5 章”式硬编码引用。原书的 “see Chapter 11”、“see Appendix A” 等改写成语义化描述或相对链接，指向对应中文页面。
-- **CJK 空格**：中英文、中文与数字之间必须加半角空格。
-- **第二人称**：一律使用“你”而非“您”。
-- **图片**：`![说明](.gitbook/assets/xxx.png)`；图片位于仓库根目录的 `.gitbook/assets/`，子目录页面引用时写相对路径 `../.gitbook/assets/xxx.png`。图注随正文翻译。
+* **章首题记**：每章开头的引文照译，格式为单独一段：`> “引文”——署名`。引文中的比喻、俚语按中文习惯改写，不要直译成生硬句子。
+* **信息框**：原书四类信息框统一用 `>` 引用块，关键词加粗，与正文之间空行分隔：
+  * `Hints & Tips` → `> **提示与技巧**`
+  * `Notes from the Underground` → `> **地下笔记**`
+  * `From the Wizards` → `> **巫师箴言**`
+  * `UNIX Funnies` → `> **UNIX 笑话**`
+  * 普通提醒用 `> **注意**`、`> **警告**`。
+* **代码块与终端摘录**：
+  * shell 命令与终端会话用 ` ```sh `，C 代码用 ` ```c `，配置文件/数据用 ` ```ini ` 或按内容选语言；**无法判断时用无语言标注的 ` ``` ` 兜底，禁止使用 `text` 作为代码块标记**。
+  * 终端会话保留原书提示符：`%`（csh）、`$`（sh）、`#`（root）。
+  * 代码块内的英文注释**必须翻译为中文**，只译注释，不得改动命令、代码、变量名与格式。
+  * 代码块与终端输出内容**禁止篡改**：软件版本号、错误信息、文件名、变量名一律保持原样（错误信息若在正文中被引用解释，正文可译、代码块内保持英文）。
+* **命令、选项、参数**：用行内代码（反引号）包裹，如 `ls -l`、`grep`。不带选项和参数的裸命令（如 mv、cp）一般不加反引号。
+* **路径与 IP**：正文中的路径（如 **/etc/passwd**、**/usr/spool**）和 IP 地址一律用 **加粗**，不用反引号包裹；不要混合使用（写成 `*`path`*` 是错误的）。代码块中的路径保持原样。
+* **表格**：一律居中。表头声明几列，所有数据行就必须有几列，缺的写 `| |`，不得省略管道符。
+* **禁止 HTML**：本项目不支持任何 HTML 语法。
+* **引号规范（重要）**：正文必须使用中文弯引号——双引号 `“ ”`、单引号 `‘ ’`（外层用双引号，引号内再引用用单引号）。**引号必须成对，且方向正确**：左引号 `“` `‘` 只用于开启，右引号 `”` `’` 只用于收束，不得混用或单边缺失。禁止英文直引号 `"` 与 `'`、禁止 `「」『』` 直角引号（代码块与行内代码内保持原样；英文单词内部的撇号如 O’Dell、don't 不算引号）。发现错误的引号要逐个手动修正，禁止机械替换。
+* **禁止 AsciiDoc 语法残留**：不允许 `xref:file[文本]`、`link:file[文本]` 等双冒号链接语法与行尾 `+` 软换行；所有段落必须在同一行内完成，不得跨行拼接。链接一律使用标准 markdown `[文本](路径或 URL)`。
+* **禁止篡改**：软件版本号、人名、书名、URL、邮箱、带圈数字（如 ①②③）等必须与原文一致，位置和数量不得变动。
+* **避免滥用“已”字**：如“XX 已新增”应改为“新增 XX”。禁止机械替换。
+* **避免章节交叉引用**：正文不要出现“参见第 5 章”式硬编码引用。原书的 “see Chapter 11”、“see Appendix A” 等改写成语义化描述或相对链接，指向对应中文页面。
+* **CJK 空格**：中英文、中文与数字之间必须加半角空格。
+* **第二人称**：一律使用“你”而非“您”。
+* **图片**：`![说明](.gitbook/assets/xxx.png)`；图片位于仓库根目录的 `.gitbook/assets/`，子目录页面引用时写相对路径 `../.gitbook/assets/xxx.png`。图注随正文翻译。
 
 ### 术语
 
-- 所有术语以 `yi-zhe-shuo-ming.md` 为准。常用约定：
-  - **人名一律保留英文原名**，不音译（Ken Thompson、Dennis Ritchie、Bill Joy……）。首次出现时如需说明身份，用同位语补充（如“贝尔实验室的 Ken Thompson”），不要造音译名。
-  - 产品名、公司名、软件名、命令名保持英文：UNIX、BSD、System V、Sun、DEC、Xerox、shell、uucp、Usenet、vi、Emacs、GNU 等。
-  - “shell” 不译为“壳/外壳”；“daemon” → “守护进程”；“kernel” → “内核”；“source(s)” → “源码”；“public-domain” → “公有领域”；“timesharing” → “分时”；“port/porting” → “移植”；“repository” → “存储库”（禁止“仓库”）；“copy” → “复制”（禁止“拷贝”）。
-  - “UNIX” 保持原书大小写：标题与正文中通常写作 UNIX；原书刻意使用 “Unix” 处（如引用刊物名 *Unix World*）保持原样，禁止机械统一。
-- 新术语先查对照表；表里没有的，确定译法后先补录，再在正文使用。
-- 书中大量出现 1980 年代的专有名词与产品，无法确定中文习惯译法时保留英文原名并登记进对照表，不要臆造译名。
+* 所有术语以 `yi-zhe-shuo-ming.md` 为准。常用约定：
+  * **人名一律保留英文原名**，不音译（Ken Thompson、Dennis Ritchie、Bill Joy……）。首次出现时如需说明身份，用同位语补充（如“贝尔实验室的 Ken Thompson”），不要造音译名。
+  * 产品名、公司名、软件名、命令名保持英文：UNIX、BSD、System V、Sun、DEC、Xerox、shell、uucp、Usenet、vi、Emacs、GNU 等。
+  * “shell” 不译为“壳/外壳”；“daemon” → “守护进程”；“kernel” → “内核”；“source(s)” → “源码”；“public-domain” → “公有领域”；“timesharing” → “分时”；“port/porting” → “移植”；“repository” → “存储库”（禁止“仓库”）；“copy” → “复制”（禁止“拷贝”）。
+  * “UNIX” 保持原书大小写：标题与正文中通常写作 UNIX；原书刻意使用 “Unix” 处（如引用刊物名 *Unix World*）保持原样，禁止机械统一。
+* 新术语先查对照表；表里没有的，确定译法后先补录，再在正文使用。
+* 书中大量出现 1980 年代的专有名词与产品，无法确定中文习惯译法时保留英文原名并登记进对照表，不要臆造译名。
 
 ### 语言质量要求（本项目的核心标准）
 
 翻译质量以“像中文技术作者直接写作”为标尺。除逐句准确外，必须清除以下毛病：
 
-- **欧化汉语**：滥用“被”字句、“进行/作出/加以 + 动词”（如“进行讨论”→“讨论”）、“……的”长定语句、复数滥用“们”。
-- **后置与倒装**：英文的从句后置结构要按汉语习惯重排（先因后果、先条件后结论）。
-- **偷换主语**：长句中主语发生变化时必须显化或断句。
-- **虚词冗余**：多余的“的、了、着、是、被、所、会、将”。
-- **死译**：双关与玩笑语要按中文习惯改写（如 “Beachcombing for Shells” 可译作“海边拾贝：捡一个顺手的 shell”），宁可意译不可留硬译。
-- 保留原书调侃、讽刺、俚语的口吻，直白、口语化，不要翻译成官腔。
+* **欧化汉语**：滥用“被”字句、“进行/作出/加以 + 动词”（如“进行讨论”→“讨论”）、“……的”长定语句、复数滥用“们”。
+* **后置与倒装**：英文的从句后置结构要按汉语习惯重排（先因后果、先条件后结论）。
+* **偷换主语**：长句中主语发生变化时必须显化或断句。
+* **虚词冗余**：多余的“的、了、着、是、被、所、会、将”。
+* **死译**：双关与玩笑语要按中文习惯改写（如 “Beachcombing for Shells” 可译作“海边拾贝：捡一个顺手的 shell”），宁可意译不可留硬译。
+* 保留原书调侃、讽刺、俚语的口吻，直白、口语化，不要翻译成官腔。
 
 ## 提交策略（重要）
 
-- **自动提交，高频提交**：代理完成一章、一个部分或一批文件后立即 `git add` 相关文件并提交，不要攒大批改动。
-- 提交信息用中文一行简述内容，如“翻译第 6 章 用户环境”“校对第 1 章第一轮”。
-- 只提交与本次工作相关的 `.md`/脚本文件；`en/`、`LifeWithUnux_LibesRessler.pdf`、`.gitbook/assets/` 的改动单独提交并在信息中注明。
-- 直接提交到 `main` 分支；未经用户要求不要 push、不要 force 操作。
+* **自动提交，高频提交**：代理完成一章、一个部分或一批文件后立即 `git add` 相关文件并提交，不要攒大批改动。
+* 提交信息用中文一行简述内容，如“翻译第 6 章 用户环境”“校对第 1 章第一轮”。
+* 只提交与本次工作相关的 `.md`/脚本文件；`en/`、`LifeWithUnux_LibesRessler.pdf`、`.gitbook/assets/` 的改动单独提交并在信息中注明。
+* 直接提交到 `main` 分支；未经用户要求不要 push、不要 force 操作。
 
 ## 翻译校对工作流
 
@@ -175,14 +175,14 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 ## 本地工具
 
-- **引号检查**（`script/check_quotes.py`）：检查正文引号是否为成对、方向正确的中文弯引号，并排查直引号与直角引号（代码块与行内代码自动豁免，英文词内撇号不算引号）：
+* **引号检查**（`script/check_quotes.py`）：检查正文引号是否为成对、方向正确的中文弯引号，并排查直引号与直角引号（代码块与行内代码自动豁免，英文词内撇号不算引号）：
 
   ```sh
   python script/check_quotes.py          # 检查全部内容 .md
   python script/check_quotes.py 路径...   # 只检查指定文件/目录
   ```
 
-- **markdownlint**（配置 `.github/.markdownlint.json`）：本地已装 `markdownlint-cli2`，在仓库根目录执行：
+* **markdownlint**（配置 `.github/.markdownlint.json`）：本地已装 `markdownlint-cli2`，在仓库根目录执行：
 
   ```sh
   # 检查（排除 en/、.gitbook/、script/）
@@ -192,4 +192,4 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
   markdownlint-cli2 "**/*.md" "!en/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json --fix
   ```
 
-- PDF 导出：使用 [gitbook-pdf-export](https://github.com/FreeBSD-Ask/gitbook-pdf-export) 脚本。
+* PDF 导出：使用 [gitbook-pdf-export](https://github.com/FreeBSD-Ask/gitbook-pdf-export) 脚本。

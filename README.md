@@ -2,6 +2,8 @@
 
 本项目是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*）的简体中文翻译，由 FreeBSD 中文社区译制。
 
+**翻译状态**：全书初译完成（2026 年 10 月），共 129 个页面；结构、引号与 markdownlint 检查均通过。校对进展见 [CHANGELOG.md](CHANGELOG.md)，术语以 [术语表](yi-zhe-shuo-ming.md) 为准。
+
 ---
 
 《UNIX 生活》是那本“另一种”UNIX 书。它讲的是手册没讲的、UNIX 入门书没讲的、UNIX 课程没讲的。这本书研究的是字里行间的东西——而学习 UNIX，恰恰就是这种字里行间的功夫。

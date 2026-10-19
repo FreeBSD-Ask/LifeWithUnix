@@ -1,19 +1,35 @@
 # 编辑日志
 
+## 2026-10-20
+
+**全书初译完成**
+
+* 完成前言两篇、第 1–12 章、附录 A 的全部翻译，共 129 个页面（111 节 + 12 章首页 + 前言 2 篇 + 附录 A + 术语表）。
+* 每章翻译后即时提交；全部页面通过 `script/check_quotes.py` 引号检查与 markdownlint 检查（0 错误）。
+* 结构校验：`SUMMARY.md` 全部条目对应文件均存在，H1 与 SUMMARY 完全一致；英文源中 187 个节号在中文版中全部存在，无漏节。
+* 专项处理：
+  * 第 1 章“UNIX 主要演化步骤”时间线图、第 3 章“融合趋势”图：前者整理为表格并加译注，后者从 PDF 提取为 `fig-3-2-merging.png`。
+  * 第 5 章会议赠品徽章图：按原图连线关系整理为列表并加译注。
+  * 第 9 章公共访问 UNIX 名录：原表多列换行难以可靠转写，保留两页影印图（`fig-9-1/9-2-public-access-*.png`）。
+  * 第 11、12 章插图按原书位置插入；第 12.5 节保留作者名字汉字图。
+  * 原书脚注（†/‡）统一以 `> †` 引用块紧随引用段落呈现。
+  * 附录 A 的 337 条机构地址按原文照录，名称、地址、电话与邮箱均不改动，仅译前言。
+* 整章级校对：逐章对照 `en/` 源文完成一遍通读校对；发现并修正的问题包括：误译（如第 2.5 节双重否定）、错字（“干册”“理論”“区分数”等）、句式与术语不统一（“moderated”“workstation”等中英混用）、页内子节层级（H3 → H2，符合 markdownlint MD001）。
+
+**说明**
+
+* 原书 Index（索引）未翻译：其页码与条目对应纸质书，在 GitBook 中无对应意义。
+* 术语以 `yi-zhe-shuo-ming.md` 为准；人名一律保留英文原名，产品名、公司名保持英文。
+* 后续校对可继续按 `AGENTS.md` 的“三轮 + 一轮复查”流程逐章深入；本轮以结构与语言通读为主。
+
 ## 2026-10-18
 
 **项目启动**
 
-- 建立翻译项目：确定书名《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*，Don Libes、Sandy Ressler 著，Prentice Hall 1989）。
-- 改写 `AGENTS.md`，替换原 FreeBSD 手册模板，适配本书翻译项目（PDF 原文提取、GitBook 结构、四类信息框、术语表）。
-- 新增原文提取工具 `script/extract_pdf.py`（按坐标剔除页眉页脚、重组跨行连字符）、切分工具 `script/split_en.py`（按印刷目录切成 20 个英文源文件，输出到 `en/`）、目录生成工具 `script/gen_mulu.py`（由 `SUMMARY.md` 生成 `mu-lu.md`，并可按目录建占位页）。
-- 提取正文插图 3 张到 `.gitbook/assets/`。
-- 建立完整 GitBook 目录结构：4 部分 12 章共 111 节，另前言两篇、附录 A，共页面 126 个；`SUMMARY.md` 与 `mu-lu.md` 同步生成。
-- 编写 `README.md` 项目首页与 `yi-zhe-shuo-ming.md` 术语对照表。
-- 原书页码与中文章节对应关系：原书正文第 1 页 = PDF 第 21 页（偏移 +20）。
-
-**待办**
-
-- 各章翻译与逐句校对（三轮 + 一轮复查）。
-- 附录 A 地址名录：公司名保留英文，条目说明文字翻译。
-- 原书 Index（索引）不翻译，改为说明页或省略（索引页码无对应意义）。
+* 建立翻译项目：确定书名《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*，Don Libes、Sandy Ressler 著，Prentice Hall 1989）。
+* 改写 `AGENTS.md`，替换原 FreeBSD 手册模板，适配本书翻译项目（PDF 原文提取、GitBook 结构、四类信息框、术语表、自动高频提交）。
+* 新增原文提取工具 `script/extract_pdf.py`（按坐标剔除页眉页脚、重组跨行连字符）、切分工具 `script/split_en.py`（按印刷目录切成 20 个英文源文件，输出到 `en/`）、目录生成工具 `script/gen_mulu.py`（由 `SUMMARY.md` 生成 `mu-lu.md`，并可按目录建占位页）、引号检查工具 `script/check_quotes.py`。
+* 提取正文插图到 `.gitbook/assets/`。
+* 建立完整 GitBook 目录结构：4 部分 12 章共 111 节，另前言两篇、附录 A，共页面 126 个；`SUMMARY.md` 与 `mu-lu.md` 同步生成。
+* 编写 `README.md` 项目首页与 `yi-zhe-shuo-ming.md` 全局术语表（含核心术语到章节的索引）。
+* 原书页码与中文章节对应关系：原书正文第 1 页 = PDF 第 21 页（偏移 +20）。
