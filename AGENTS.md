@@ -96,7 +96,7 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 - **避免章节交叉引用**：正文不要出现“参见第 5 章”式硬编码引用。原书的 “see Chapter 11”、“see Appendix A” 等改写成语义化描述或相对链接，指向对应中文页面。
 - **CJK 空格**：中英文、中文与数字之间必须加半角空格。
 - **第二人称**：一律使用“你”而非“您”。
-- **图片**：`![说明](.gitbook/assets/xxx.png)`，图注随正文翻译。
+- **图片**：`![说明](.gitbook/assets/xxx.png)`；图片位于仓库根目录的 `.gitbook/assets/`，子目录页面引用时写相对路径 `../.gitbook/assets/xxx.png`。图注随正文翻译。
 
 ### 术语
 
