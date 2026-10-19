@@ -7,7 +7,7 @@
 这是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*，Don Libes 与 Sandy Ressler 著，Prentice Hall 1989 年出版）的简体中文翻译项目，由 FreeBSD 中文社区译制，基于 GitBook 格式发布。
 
 * 原文：仓库根目录的 **LifeWithUnux_LibesRessler.pdf**（372 页）。该文件**不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
-* `en/` — 从 PDF 提取的英文原文文本，供逐句对照翻译使用。**不要修改或翻译 `en/` 中的内容**，也不要将其当作成品引用。
+* `en/` — 从 PDF 提取的英文原文文本，供逐句对照翻译使用。**不要修改或翻译 `en/` 中的内容**，也不要将其当作成品引用。**`en/` 与 `script/` 均已被 `.gitignore` 排除，只存在于本地工作副本，不随仓库分发**；新克隆仓库需先准备 PDF 并运行提取脚本重建。
 * **注意：`en/` 文本由脚本自动提取，存在少量跨行连字符重组错误（如 `front-to-back` 可能被并成 `frontto-back`）或页眉页脚残留。** 凡遇可疑之处，一律回到 PDF 核对，以 PDF 为唯一权威源；禁止以中文版既有翻译作为修改依据，避免错误沿袭。
 * **`.github/workflows/` 下的 CI 工作流全部沿用自本社区其他项目，动作要与其约定一致**：
   * `sync-headers.yml` — 每次推送后把各 `.md` 文件的 H1 强制改成 `SUMMARY.md` 中对应条目的文字（方向：SUMMARY → 文件 H1）。改标题只需改 `SUMMARY.md`，H1 由 CI 自动同步；本地改动后若 H1 与 SUMMARY 不一致，推送后会被 CI 覆盖。
@@ -20,7 +20,7 @@
 
 ## 原文来源与重新提取
 
-PDF 为文本型（非扫描件），可直接提取。提取与切分流程：
+PDF 为文本型（非扫描件），可直接提取。提取与切分流程（脚本位于本地 `script/`，不随仓库分发）：
 
 ```sh
 python script/extract_pdf.py   # 生成 en/lifewithunix-full.txt（含 [[PAGE n]] 页码标记）
@@ -123,7 +123,7 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 * **自动提交，高频提交**：代理完成一章、一个部分或一批文件后立即 `git add` 相关文件并提交，不要攒大批改动。
 * 提交信息用中文一行简述内容，如“翻译第 6 章 用户环境”“校对第 1 章第一轮”。
-* 只提交与本次工作相关的 `.md`/脚本文件；`en/`、`LifeWithUnux_LibesRessler.pdf`、`.gitbook/assets/` 的改动单独提交并在信息中注明。
+* 只提交与本次工作相关的 `.md`/脚本文件；`.gitbook/assets/` 的改动单独提交并在信息中注明。`en/`、`script/`、PDF 均被 `.gitignore` 排除，不要强行加入版本控制。
 * 直接提交到 `main` 分支；未经用户要求不要 push、不要 force 操作。
 
 ## 翻译校对工作流
