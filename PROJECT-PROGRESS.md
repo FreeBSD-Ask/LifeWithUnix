@@ -1,8 +1,8 @@
 # 进度书
 
 > 最后更新：2026-10-20
-> HEAD：`c244407`（润色第 1 章历史导言）
-> 工作树：干净（本文件提交后以 `git status` 为准）
+> HEAD：`c076a59`（建立任务书、检查点与进度书）
+> 工作树：干净
 > 当前任务：U01 第 1 章 UNIX 历史
 > 当前轮次：R1 准确性（未完成）
 > 下一步：先处理第 2 节的 3 项待改，再继续对照 `en/04-ch01-unix-history.txt` 校对 1.2、1.4 至 1.12，完成 R1 后进入 R2。
@@ -65,7 +65,7 @@
 | 检查点 | 实际输出 | 时间 |
 | ------ | -------- | ---- |
 | CP-G1 引号 | `total problems: 0` | 2026-10-20 |
-| CP-G2 markdownlint | `Summary: 0 error(s)`，132 个文件 | 2026-10-20 |
+| CP-G2 markdownlint | `Summary: 0 error(s)`，135 个文件 | 2026-10-20 |
 | CP-G3 H1 与 SUMMARY | `entries 129 mismatches 0` | 2026-10-20 |
 | CP-G4 章节结构 | 未执行，`script/compare_structure.py` 缺失 | 2026-10-20 |
 | CP-G5 CJK 空格 | `CJK no-space lines: 0` | 2026-10-20 |
@@ -84,6 +84,7 @@
 ## 6. 更新日志
 
 * 2026-10-20：建立 `PROJECT-TASKS.md`、`PROJECT-CHECKPOINTS.md`、`PROJECT-PROGRESS.md`；冻结 `script/review-progress.md`。
+* 2026-10-20：三份文档改用 `PROJECT-` 前缀，避免被通用忽略规则排除出仓库。
 * 2026-10-20：U00 前言与 U13 附录 A 完成并提交。
 * 2026-10-20：U01 通读英文原文，`1.` 至 `1.3` 对照完成，7 处修改已提交。
 * 2026-10-20：10 路子代理派发全部取消，转为手工串行。
