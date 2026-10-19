@@ -85,6 +85,7 @@
 | daisy-wheel printer | 菊花轮打印机 | |
 | electrostatic printer | 静电打印机 | |
 | keyed record | 键控记录 | 不作“键值”，避免现代 NoSQL 联想 |
+| Orange Book | 橙皮书 | 美国国防部 NCSC 可信计算机系统评价标准（TCSEC） |
 | backup | 备份 | |
 | boot / booting | 引导 | reboot → 重启 |
 | account | 账户 | |
