@@ -70,6 +70,16 @@
 | port / porting | 移植 | “portability” → 可移植性 |
 | clone / cloner | 克隆 / 克隆厂商 | work-alike → 仿制品 |
 | dump | 转储 | |
+| core dump | 核心转储 | dump → 转储 |
+| debugger | 调试器 | source-level debugger → 源码级调试器 |
+| profiling | 性能剖析 | |
+| token | 记号 | 词法分析语境 |
+| magic number | 魔数 | |
+| raw mode | 原始模式 | |
+| cooked mode | 熟模式 | |
+| pty / pseudo-tty | 伪终端 | master/slave → 主端/从端 |
+| virtual operating system / VOS | 虚拟操作系统（VOS） | Software Tools 项目的 VOS，首次出现括注 |
+| link | 链接 | |
 | backup | 备份 | |
 | boot / booting | 引导 | reboot → 重启 |
 | account | 账户 | |
@@ -84,7 +94,7 @@
 | alias | 别名 | |
 | script | 脚本 | |
 | process | 进程 | |
-| signal | 信号 | |
+| signal | 信号 | 信号名（SIGKILL、SIGQUIT 等）保留英文 |
 | job control | 作业控制 | |
 | superuser / root | 超级用户 / root | |
 | setuid | setuid | 不翻译 |
@@ -152,7 +162,7 @@
 
 * **操作系统与产品**：UNIX、Unix（原书刻意小写处保留）、BSD、Berkeley UNIX、System V、System III、XENIX、Mach、SunOS、ULTRIX、AIX、A/UX、HP-UX、Xenix、POSIX、X/Open、OSF、UI、SVR4
 * **公司与机构**：AT&T、Bell Labs（贝尔实验室）、DEC、Sun Microsystems、IBM、HP、Xerox、Microsoft、SCO、UniSoft、MIPS、Motorola、NCR、Apollo、Siemens、Philips、Olivetti、NEC、Fujitsu、Hitachi、Toshiba、ICL、Bull、USENIX、EUUG、/usr/group、IEEE、ANSI、ISO、NBS、MITI、GNU、FSF、NASA、DARPA、ARPA
-* **软件与工具**：uucp、Usenet、vi、ed、Emacs、GNU Emacs、sed、awk、grep、find、xargs、make、SCCS、RCS、yacc、lex、lint、curses、adb、sdb、dbx、csh、ksh、sh、bash、termcap、terminfo、stty、init、getty、cron、sendmail、rn、readnews、vnews、nn、Minitab、Mathematica、Lotus 1-2-3、dBASE、Ingres、Oracle、Sybase、Informix、Unify、Empress、X11、NeWS、PostScript
+* **软件与工具**：uucp、Usenet、vi、ed、Emacs、GNU Emacs、sed、awk、grep、find、xargs、make、SCCS、RCS、yacc、lex、lint、curses、adb、sdb、dbx、csh、ksh、sh、bash、termcap、terminfo、stty、init、getty、cron、sendmail、rn、readnews、vnews、nn、Minitab、Mathematica、Lotus 1-2-3、dBASE、Ingres、Oracle、Sybase、Informix、Unify、Empress、X11、NeWS、PostScript、makefile、bss、a.out
 * **UNIX 版本**：V6、V7、Version 7、Research UNIX、PWB、MERT、TS 1.0
 * **人名**：一律保留英文原名，不音译。如 Ken Thompson、Dennis Ritchie、Brian Kernighan、Bill Joy、Eric Allman、Kirk McKusick、Rob Pike、Doug McIlroy、Alfred Aho、Peter Weinberger、Mike Lesk、Stephen Bourne、David Korn、Andrew Tanenbaum、Richard Stallman、Steve Jobs、Bill Gates、Grace Hopper、John Lions 等。
 
