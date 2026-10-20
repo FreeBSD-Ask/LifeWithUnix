@@ -103,7 +103,8 @@ python script/split_en.py      # 按章切分为 en/04-ch01-unix-history.txt 等
 
 * 所有术语以 `yi-zhe-shuo-ming.md` 为准。常用约定：
   * **人名一律保留英文原名**，不音译（Ken Thompson、Dennis Ritchie、Bill Joy……）。首次出现时如需说明身份，用同位语补充（如“贝尔实验室的 Ken Thompson”），不要造音译名。
-  * 产品名、公司名、软件名、命令名保持英文：UNIX、BSD、System V、Sun、DEC、Xerox、shell、uucp、Usenet、vi、Emacs、GNU 等。
+  * 产品名、软件名、命令名保持英文：UNIX、BSD、System V、Sun、DEC、shell、uucp、Usenet、vi、Emacs、GNU 等。
+  * **公司名（2026-10-20 修订）**：有中文通行译名的著名公司采用中译（微软、惠普、苹果、施乐、英特尔、摩托罗拉、索尼、东芝、康柏、霍尼韦尔、西方电气公司、麦格劳-希尔、艾迪生-韦斯利、国家半导体公司、阿姆达尔、克雷等，完整清单见 `yi-zhe-shuo-ming.md`）；无通行译名者保持英文（IBM、AT&T、DEC、Sun 等）。芯片/机器型号中的品牌一律保持英文（Intel 80386、Motorola 68000、HP Integral PC、Cray-2、Sun 3）。
   * “shell” 不译为“壳/外壳”；“daemon” → “守护进程”；“kernel” → “内核”；“source(s)” → “源码”；“public-domain” → “公有领域”；“timesharing” → “分时”；“port/porting” → “移植”；“repository” → “存储库”（禁止“仓库”）；“copy” → “复制”（禁止“拷贝”）。
   * “UNIX” 保持原书大小写：标题与正文中通常写作 UNIX；原书刻意使用 “Unix” 处（如引用刊物名 *Unix World*）保持原样，禁止机械统一。
 * 新术语先查对照表；表里没有的，确定译法后先补录，再在正文使用。

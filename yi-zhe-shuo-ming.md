@@ -193,3 +193,43 @@
 * 版本号：V7、System V Release 4（首次出现全称，后可作 SVR4）
 * 页码引用：原书页码仅在必要时以“（原书第 X 页）”形式保留
 * 价格：保留美元原值，如 “$995”，不换算
+
+## 著名专名中译（2026-10-20 增补，依据用户修订规则）
+
+规则：书名、著名期刊/报刊/论文、著名公司等，如有通行的中文译名则采用中译（书名及需消歧处附英文原名括注）；无通行译名者保持英文。产品名、芯片/机器型号一律保持英文（如 Intel 80386、Motorola 68000、HP Integral PC、Cray-2、Sun 3、Macintosh、XENIX）。
+
+### 图书（有中文译本）
+
+| 英文书名 | 采用中译名 | 中译本出处 |
+| -------- | ---------- | ---------- |
+| The C Programming Language | 《C程序设计语言》 | 机械工业出版社 |
+| The C++ Programming Language | 《C++程序设计语言》 | 机械工业出版社 |
+| The AWK Programming Language | 《AWK程序设计语言》 | 机械工业出版社 2026 |
+| C: A Reference Manual | 《C语言参考手册》 | 机械工业出版社 |
+| The C Answer Book | 《C程序设计语言习题解答》 | 机械工业出版社 |
+| The C Puzzle Book | 《C语言解惑》 | 人民邮电出版社 |
+| Advanced UNIX Programming | 《高级UNIX编程》 | 机械工业出版社 2006 |
+| The UNIX Programming Environment | 《UNIX编程环境》 | 机械工业出版社 1999／人民邮电 2014 |
+| Design of the UNIX Operating System | 《UNIX操作系统设计》 | 机械工业出版社 2000 |
+| Operating Systems: Design and Implementation | 《操作系统：设计及实现》 | 第 2 版中译本 |
+| Operating System Design: The XINU Approach | 《操作系统设计：Xinu方法》 | 机械工业出版社 2013/2019 |
+| The UNIX Operating System (Kaare Christian) | 《UNIX操作系统》 | 电子工业出版社 1986/1991 |
+
+无中文译本、保持英文：Software Tools、Life with UNIX、The Design and Implementation of the 4.3BSD UNIX Operating System（仅德译/日译）、Introducing the UNIX System（仅德译）、A Commentary on the UNIX Operating System（1977 两卷本未正式出版）、Introduction to Compiler Construction with UNIX、Portable C and UNIX System Programming、User Guide to the UNIX System、Advanced Programmer's Guide to UNIX System V、The UNIX System (Bourne)、UNIX System Administration、X/OPEN Portability Guide、Nutshell Handbooks（系列名）、UNIX for People、Big Blue、UNIX System Security、UNIX Survival Guide、The Korn Shell Command and Programming Language、Introduction to UNIX / UNIX Programming / Password Security: A Case History（贝尔实验室内部文集）。
+
+### 期刊与论文
+
+| 英文原名 | 采用中译名 | 依据 |
+| -------- | ---------- | ---- |
+| Communications of the ACM | 《ACM通讯》 | ACM 官方中文版刊名 |
+| Byte | 《字节》 | 中文文献通行 |
+| The UNIX Time-Sharing System (Thompson & Ritchie, 1974) | 《UNIX分时系统》 | 中文文献通行译名 |
+| Whole Earth Catalog | 《全球概览》 | 中文通行 |
+
+保持英文：IEEE Computer、UNIX REVIEW、UNIXWORLD、The C Users Journal、;login:、Computing Systems、CommUNIXations、UNIX Bulletins、Operating Systems Review、Micro C、Government Computer News、DEC Pro Extra、UNIX Readings、Notable Computer Networks 及其余论文/文章/手册名。
+
+### 公司（中文通行译名，公司语境采纳）
+
+Microsoft→微软；Hewlett-Packard→惠普（缩写 HP 保留）；Apple→苹果；Xerox→施乐；Intel→英特尔；Motorola→摩托罗拉；Sony→索尼（Sony Microsystems 商号整体保留）；Toshiba→东芝（Toshiba America→东芝美国）；Compaq→康柏；Honeywell→霍尼韦尔；Western Electric→西方电气公司（缩写 WECo 保留）；McGraw-Hill→麦格劳-希尔；Addison-Wesley→艾迪生-韦斯利；National Semiconductor→国家半导体公司；Amdahl→阿姆达尔；Cray→克雷。
+
+保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Prentice-Hall、Wiley、Hayden、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注。
