@@ -64,6 +64,8 @@
 | daemon | 守护进程 | |
 | device driver | 设备驱动程序 | |
 | file system | 文件系统 | |
+| toaster | 烤面包机 | 原书反复用“烤箱里跑 UNIX”作笑点，两个词不可混同 |
+| toaster oven | 烤箱 | 与 toaster（烤面包机）区分；原书 2.1、3.11 用 toaster oven，第 3 章题记用 toaster |
 | source (code) | 源码 | |
 | public domain / public-domain | 公有领域 | |
 | free software | 免费软件 | 1980 年代语境；GNU 语境下的 “free” 按“自由”处理 |

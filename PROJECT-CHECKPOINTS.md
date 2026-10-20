@@ -24,10 +24,12 @@ python script/check_quotes.py
 ### CP-G2 markdownlint
 
 ```sh
-npx --no-install markdownlint-cli2 "**/*.md" "!en/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json
+npx --no-install markdownlint-cli2 "**/*.md" "!en/**" "!node_modules/**" "!script/**" "!.workbuddy/**" --config .github/.markdownlint.json
 ```
 
 预期：输出 `Summary: 0 error(s)`。2026-10-20 的基线为 132 个文件；新增任务文档后文件数会变化，错误数必须为 0。
+
+说明：`!.workbuddy/**` 是 2026-10-20 追加的排除项。该目录是代理工具的状态与记忆文件（已在 `.gitignore` 中排除、不随仓库分发），不是本书内容；其列表符号与正文规范无关，纳入 lint 只会制造噪声。
 
 失败处理：逐条修复，不得关闭规则或修改配置掩盖问题。
 
@@ -66,9 +68,20 @@ EOF
 python script/compare_structure.py
 ```
 
-预期：差异为 0。
+预期：差异为 0，退出码为 0。
 
-当前状态：该脚本在 2026-10-20 检查时不存在（`AGENTS.md` 有引用）。暂以 CP-G3 加人工核对节号代替：逐章检查 `X.1` 至 `X.N` 是否连续、H2 是否保留原书节号。补建脚本后，把实际输出写回本节。
+实际输出（2026-10-20 补建脚本后执行）：
+
+```
+en sections: 182
+zh sections: 182
+missing (en only): 0
+extra (zh only): 0
+wrong level: 0
+diffs: 0
+```
+
+脚本比对内容：`en/*.txt` 的节与子节号（`X.Y`、`X.Y.Z`）对中文版 H1/H2/H3 标题中的同级节号；报告漏节、多节、层级错位三类差异。节号以 X.Y 起头，故评分刻度行（如 `4 4 Claims`）不会被误判；`4.0BSD` 这类版本号开头的行已排除。章首页（`# 第 N 章`）不进入节号集合。
 
 ### CP-G5 中文与英文、数字间距
 
