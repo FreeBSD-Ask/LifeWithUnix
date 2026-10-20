@@ -38,6 +38,7 @@
 | underground | 地下（世界） | [第 9 章 UNIX 地下世界](di-si-bu-fen-unix-zhi-wai/9.-unix-di-xia-shi-jie.md) |
 | wizard | 巫师 | [第 9 章 UNIX 地下世界](di-si-bu-fen-unix-zhi-wai/9.-unix-di-xia-shi-jie.md) |
 | obfuscated C | 晦涩 C 代码 | [9.5 晦涩 C 代码](di-si-bu-fen-unix-zhi-wai/9.5.-hui-se-c-dai-ma.md) |
+| CGI | 计算机图形接口 | [10.6 移植、集成与安装](di-si-bu-fen-unix-zhi-wai/10.6.-yi-zhi-ji-cheng-yu-an-zhuang.md) |
 
 ## 书名与章节名
 
@@ -68,7 +69,7 @@
 | free software | 免费软件 | 1980 年代语境；GNU 语境下的 “free” 按“自由”处理 |
 | timesharing | 分时 | |
 | port / porting | 移植 | “portability” → 可移植性 |
-| clone / cloner | 克隆 / 克隆厂商 | work-alike → 仿制品 |
+| clone / cloner | 克隆 / 克隆厂商 | look-alike → 相似品；work-alike → 仿制品 |
 | dump | 转储 | |
 | core dump | 核心转储 | dump → 转储 |
 | debugger | 调试器 | source-level debugger → 源码级调试器 |
