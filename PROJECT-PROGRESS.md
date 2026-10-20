@@ -1,11 +1,23 @@
 # 进度书
 
 > 最后更新：2026-10-20
-> 最近内容提交：`411f1f4`（外部钩子提交，第 4 章书刊评分刻度校正）；其后的插图清点与本轮通读改动以 `git log` 为准
-> 工作树：含第 2、4 章通读轮修改与本进度书更新，待钩子提交
-> 当前任务：全书通读轮（经用户批准启动，手工串行、不用子代理）——逐句对照 `en/` 原文，只处理新问题、不复查旧错；已完成 U00–U04
-> 当前轮次：通读轮 U05 待开始
-> 下一步：U05（第 5 章，5 文件）→ U06 → …… → U13，按单元顺序推进；每个单元完成后运行引号与 lint 检查并更新本进度书
+> 最近内容提交：`7ea7e5a`（外部钩子提交，统一著名专名的中文译名）；其后 AGENTS.md 引号规范增补与脚本调整以 `git log` 为准
+> 工作树：含本进度书更新与 check_quotes.py 调整，待钩子提交
+> 当前任务：专名中译规则执行完毕（用户 2026-10-20 三条新规则：书名有中译本用中文、著名期刊/论文/公司有中译文采纳、禁止日式半角引号）；全书通读轮暂停于 U05 前，待恢复
+> 当前轮次：专名中译收尾
+> 下一步：恢复通读轮 U05（第 5 章，5 文件）→ U06 → …… → U13，按单元顺序推进；后续单元以术语表“著名专名中译”清单为新口径
+
+## -1. 专名中译规则执行（2026-10-20 晚，主代理）
+
+用户当晚下达三条规则修订：①所有书名如有中文译本则采用中文；②著名的期刊、报刊、论文、公司等如有中译文也采纳；③禁止日式半角引号（｢｣ 等），统一“”或‘’。执行记录：
+
+1. 规则落档：`AGENTS.md` 术语节新增书名条款、修订公司名条款（原“公司名保持英文”废止）；引号规范增补日式半角引号与全角直引号禁令；`PROJECT-CHECKPOINTS.md` CP-U04 附加检查同步改写；`yi-zhe-shuo-ming.md` 新增“著名专名中译”全清单（含采纳与保持英文两类及依据）。
+2. 联网核查（逐项搜索确认，无凭记忆臆造）：12 种图书确认有中文译本——The C Programming Language《C程序设计语言》、The C++ Programming Language《C++程序设计语言》、The AWK Programming Language《AWK程序设计语言》、C: A Reference Manual《C语言参考手册》、The C Answer Book《C程序设计语言习题解答》、The C Puzzle Book《C语言解惑》、Advanced UNIX Programming《高级UNIX编程》、The UNIX Programming Environment《UNIX编程环境》、Design of the UNIX Operating System《UNIX操作系统设计》、Operating Systems: Design and Implementation《操作系统：设计及实现》、Operating System Design: The XINU Approach《操作系统设计：Xinu方法》、The UNIX Operating System《UNIX操作系统》；Software Tools、Life with UNIX、The Design and Implementation of the 4.3BSD（仅德/日译）、Introducing the UNIX System（仅德译）等经检索确认无中译本，保持英文。
+3. 期刊与论文：《Communications of the ACM》→《ACM通讯》（10 处，依据 ACM 官方中文版刊名）、《Byte》→《字节》、The UNIX Time-Sharing System→《UNIX分时系统》（2 处，附英文括注）、Whole Earth Catalog→《全球概览》（2 处）；其余刊名/论文经查无通行中译，保持英文。
+4. 公司：微软（26 处）、惠普（9）、苹果（9）、施乐（8）、英特尔、摩托罗拉、索尼、东芝、康柏、霍尼韦尔、西方电气公司、麦格劳-希尔、艾迪生-韦斯利、国家半导体公司、阿姆达尔、克雷共 16 家采纳中译；产品/芯片/机器型号一律保持（Intel 80386、Motorola 68000、HP Integral PC、Cray-2、Sun 3、Sony Microsystems 商号、HP/WECo 缩写）；IBM、AT&T、DEC、Sun 等无通行中文名者保持英文。
+5. 执行量约 90 处，逐个手动修改；replace_all 引入的空格残留（“ 微软 ”）已逐处清理；4.5 的 13 个条目标题与 7 处出版行改为中译。
+6. 日式半角引号：全书扫描 ｢｣＂＇ 均为 0，现状干净，规则为预防性；`script/check_quotes.py` 增补 ｢｣＂＇ 四字符检查并排除 `.workbuddy/`（与 CP-G2 同口径），AGENTS.md 示例字符改为行内代码以通过检查。
+7. 检查：CP-G1 引号 0（含新规则）、CP-G2 lint 0（135 文件）、单元抽查 0。随 `7ea7e5a`（钩子提交）。
 
 ## 0. 全书通读轮（2026-10-20 启动）
 
