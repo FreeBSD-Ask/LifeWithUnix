@@ -1,11 +1,11 @@
 # 进度书
 
-> 最后更新：2026-10-20
-> 最近内容提交：`c4b4192`（外部钩子提交链最新）；其后的通读轮 U05 与本进度书更新以 `git log` 为准
+> 最后更新：2026-10-21
+> 最近内容提交：`87e6105`（外部钩子提交链最新）；其后的通读轮 U06 与本进度书更新以 `git log` 为准
 > 工作树：仅本进度书待钩子提交
-> 当前任务：全书通读轮（手工串行）——逐句对照 `en/` 原文，只处理新问题、不复查旧错；已完成 U00–U05；专名中译规则执行完毕
-> 当前轮次：通读轮 U06 待开始
-> 下一步：U06（第 6 章，10 文件）→ U07 → …… → U13，按单元顺序推进；后续单元以术语表“著名专名中译”清单为新口径
+> 当前任务：全书通读轮（手工串行）——逐句对照 `en/` 原文，只处理新问题、不复查旧错；已完成 U00–U06；专名中译规则执行完毕
+> 当前轮次：通读轮 U07 待开始
+> 下一步：U07（第 7 章，7 文件）→ U08 → …… → U13，按单元顺序推进；后续单元以术语表“著名专名中译”清单为新口径
 
 ## -1. 专名中译规则执行（2026-10-20 晚，主代理）
 
@@ -27,7 +27,9 @@
 * U01 第 1 章：完成，5 处修改：1.3 “我们今天所联想的”改“今天我们所熟悉的”；1.5 “热床”改“重镇”（热床非汉语词，hotbed 的对应词是温床但贬义不合）；1.6 “让 UNIX 保持可得”改“继续提供 UNIX”；1.9 “3 万美元”改“30,000 美元”（与全章价格体例一致）；1.11 “UNIX 机器机时的消耗量超过了 DOS 机时”改“UNIX 机时的消耗量超过了 DOS”。家谱表 17 行与原书刻度图逐格复核一致；1.12 共 122 条人物条目逐条核对无遗漏。检查：引号 0、lint 0（13 文件）。
 * U02 第 2 章：完成，4 处修改：2.8 分发源码条款“买方必须向 AT&T 购买或持有许可”改“卖方”（原文 the seller，且 2.8 末句同词即译卖方，系笔误级误译）；2.11 “厂商占了大多数”改“厂商为数众多”（原文 large number，未称多数）；2.11 “10 万美元”改“100,000 美元”（与本章 5,000 美元、45,000 美元等体例一致）；2.14 “缺少 UNIX 的轻便”改“易用性”（ease of use）。芯片组表逐格复核：NUXI、WiPro Information Tehnology 等原书原文照录无误，2³² 上标正确还原，IBM 在公司清单中重复两次系原书如此。引文框（Bill Joy 访谈）、政府采购框、† 脚注完整。检查：引号 0、lint 0（15 文件）、改动行 CJK 空格 0。
 * U03 第 3 章：完成，0 处修改。349 行原文与 12 个中文文件逐句对照，未发现新问题：标准列表（网络/窗口/网络文件系统/国际化 + 5 个工作组）逐项核对无遗漏；P1003.0–6 七条组成部分核对无误；Mach 引文 7 位作者姓名、VAX 机型清单、两处 ACM 文献卷期页码核对无误；3.2 融合图译注与原图内容一致；已裁定项（toaster 烤面包机/toaster oven 烤箱、overkill、many-fold、legal interpretation、无“最先提到的三个”插语）均未触碰。检查：引号 0、lint 0（12 文件）。
-* U04 第 4 章：完成，1 处修改（3 个标题）：4.1.1 三篇文集标题原译成中文（《UNIX 入门》《UNIX 程序设计》《口令安全：一则案例》），违反 CP-U04“书名保持原文”检查点，恢复为《Introduction to UNIX》、“UNIX Programming”、《Password Security: A Case History》（4.2 中 Lions 书名即保持英文，体例佐证）。其余全量核对：945 行原文逐句对照；4.5 的 29 条书目、4.6 的 15 种期刊逐条核对（评分数据今日下午已经矢量几何全量复核，维持不变）；4.1 的 8 节表格、YACHESS 手册页、man 宏框、4.2 的 /usr/src 目录树、4.3 的 4 家书店、4.4 的速查卡清单均无遗漏。检查：引号 0、lint 0（7 文件）。
+* U04 第 4 章：完成，1 处修改（3 个标题）：4.1.1 三篇文集标题原译成中文（《UNIX 入门》《UNIX 程序设计》《口令安全：一则案例》），违反 CP-U04“书名保持原文”检查点，恢复为《Introduction to UNIX》、“UNIX Programming”、《Password Security: A Case History》（4.2 中 Lions 书名即保持英文，体例佐证）。其后按用户新规则（书名有中译本则用中文）复核：其中《The Design of the UNIX Operating System》《Operating Systems: Design and Implementation》《Operating System Design: The XINU Approach》三书有中译本，已在专名统一轮改为《UNIX操作系统设计》《操作系统：设计及实现》《操作系统设计：Xinu方法》；三篇贝尔实验室内部文集（Introduction to UNIX / UNIX Programming / Password Security: A Case History）经检索无中译本，仍保持英文。其余全量核对：945 行原文逐句对照；4.5 的 29 条书目、4.6 的 15 种期刊逐条核对（评分数据今日下午已经矢量几何全量复核，维持不变）；4.1 的 8 节表格、YACHESS 手册页、man 宏框、4.2 的 /usr/src 目录树、4.3 的 4 家书店、4.4 的速查卡清单均无遗漏。检查：引号 0、lint 0（7 文件）。
+* U05 第 5 章：完成，0 处修改。343 行原文逐句对照：五种会议（UniForum／USENIX／EUUG／UNIXEXPO／UNICORN）与全部价格数字（$40/$120/$115/$195、$100/$300/$325、$1,000）核对无误；1986 年 AT&T 调查 11 项无误；赠品清单 20 余项逐项核对。两处回 PDF 原图裁定：①书页 121 徽章归属（Unknown→OS/2、name withheld→VAX/VMS）中文正确，en/ 线性抽取顺序误导；②书页 120 RTFM 徽章确有大字 RTFM 环绕 "Your guru says:"/"Read the manual!"，David Yost 双箭头连 RTFM 与 MS-DOS 两枚，中文转录忠实。原书自身矛盾（CommUNIXations 月刊/双月刊）照录不改。检查：引号 0、lint 0（5 文件）。
+* U06 第 6 章：完成，0 处修改。543 行原文与 5 个中文文件逐句对照。三处疑点回 PDF 裁定：①IIASA 拼写与位置（书页 153）与原文一致；②6.3 文件树（书页 143）逐节点核对——bin→ls/cat、etc→passwd、lib→cpp/libc.a、usr→don/sandy/lib/local、don→books/articles、books→lwu、local→bin、dev 与 bin 等平级，中文文本树完全吻合；③make 条目（"compiling, lexing, yaccing"）译“编译、lex、yacc 等等”属实。此外核对：《The Korn Shell Command and Programming Language》（Korn & Bolsky）经检索无中译本，保持英文；全部命令条目词源（cd/cp/df/du/find/ls/mkdir/mv/pwd/rm/which、cat/diff/echo/ed/file/grep/head/more/od/sed/sort/strings/tail/vi、adb/a.out/awk/cc/make/sdb/sh、date/kill/mail/man/ps/who）逐条比对无遗漏；remove-user 脚本四段代码与完整版逐行核对一致（`set -e`、test 判断、awk 取第六字段、反引号、here-doc、rm -fr）。检查：引号 0、lint 0（6 文件）。
 
 ## 1. 总览
 
