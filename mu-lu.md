@@ -128,7 +128,7 @@
 * [第 12 章 UNIX 走进现实世界](di-si-bu-fen-unix-zhi-wai/12.-unix-zou-jin-xian-shi-shi-jie.md)
   * [12.1 数据库与数据库管理系统](di-si-bu-fen-unix-zhi-wai/12.1.-shu-ju-ku-yu-shu-ju-ku-guan-li-xi-tong.md)
   * [12.2 分布式 UNIX](di-si-bu-fen-unix-zhi-wai/12.2.-fen-bu-shi-unix.md)
-  * [12.3 仿真器与共存](di-si-bu-fen-unix-zhi-wai/12.3.-fang-zhen-qi-yu-gong-cun.md)
+  * [12.3 模拟器与共存](di-si-bu-fen-unix-zhi-wai/12.3.-fang-zhen-qi-yu-gong-cun.md)
   * [12.4 容错与事务处理](di-si-bu-fen-unix-zhi-wai/12.4.-rong-cuo-yu-shi-wu-chu-li.md)
   * [12.5 国际化 UNIX](di-si-bu-fen-unix-zhi-wai/12.5.-guo-ji-hua-unix.md)
   * [12.6 大型机与超级计算机](di-si-bu-fen-unix-zhi-wai/12.6.-da-xing-ji-yu-chao-ji-ji-suan-ji.md)

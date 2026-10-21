@@ -232,6 +232,12 @@
 
 Microsoft→微软；Hewlett-Packard→惠普（缩写 HP 保留）；Apple→苹果；Xerox→施乐；Intel→英特尔；Motorola→摩托罗拉；Sony→索尼（Sony Microsystems 商号整体保留）；Toshiba→东芝（Toshiba America→东芝美国）；Compaq→康柏；Honeywell→霍尼韦尔；Western Electric→西方电气公司（缩写 WECo 保留）；McGraw-Hill→麦格劳-希尔；Addison-Wesley→艾迪生-韦斯利；National Semiconductor→国家半导体公司；Amdahl→阿姆达尔；Cray→克雷。
 
+**公司语境与产品语境的分界（2026-10-21 U11 定）**：
+
+* Intel／Motorola 作**公司名**时译“英特尔／摩托罗拉”（含清单式括注、公司致辞列表、供应商名录、芯片组表单元格内的公司列）；作**芯片／产品名**时保持英文——Intel 8086／8088／80386／CPU／Hypercube、Motorola 68000／68020；2.11 芯片组表的**行首“芯片组”列**（Intel／Motorola／NSC）表示芯片组家族，保持英文。
+* Cray 作公司译“克雷”，作机型保持 Cray-2。
+* Xerox／Apple 在任何叙述语境均译“施乐／苹果”（施乐 Alto、施乐公司、苹果 Macintosh）；仅附录 A 机构名与产品名 Appletalk、Macintosh 保持英文。
+
 保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注。
 
 ### 出版社（2026-10-21 复核修订）
