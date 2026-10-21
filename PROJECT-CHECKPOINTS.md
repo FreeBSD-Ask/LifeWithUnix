@@ -104,7 +104,7 @@ for b in bad[:10]:
 EOF
 ```
 
-预期：`CJK no-space lines: 0`。含行内代码或网址的行已跳过，需人工抽查这些行。
+预期：`CJK no-space lines: 0`。含行内代码或网址的行已跳过，需人工抽查这些行。2026-10-21 用户裁定：**书名号内的中英混排也必须加空格**（如《C 程序设计语言》《UNIX 操作系统设计》《ACM 通讯》《高级 UNIX 编程》），本检查对书名号内同样生效，不再剔除。
 
 ### CP-G6 禁止项扫描
 
@@ -132,32 +132,48 @@ EOF
 
 说明：`硬拷贝终端` 是固定术语，扫描时已排除；是否改写由术语表统一决定。HTML 计数已剔除代码块与行内代码。
 
-### CP-G7 图片引用
+### CP-G7 图片引用（双向唯一性，2026-10-21 升级）
 
 ```sh
 python - <<'EOF'
-import re, glob, pathlib
+import re, glob, pathlib, collections
 dirs = ['qian-yan', 'di-yi-bu-fen-guo-qu-xian-zai-yu-wei-lai', 'di-er-bu-fen-unix-xin-xi',
         'di-san-bu-fen-unix-nei-bu', 'di-si-bu-fen-unix-zhi-wai']
 missing = []
 total = 0
+refs = []
 files = [f for d in dirs for f in glob.glob(d + '/*.md')] + ['fu-lu-a-di-zhi.md']
 for f in files:
     base = pathlib.Path(f).parent
     for m in re.finditer(r'!\[[^\]]*\]\(([^)]+)\)', pathlib.Path(f).read_text(encoding='utf-8')):
-        p = m.group(1)
+        p = m.group(1).strip()
         if p.startswith('http'):
             continue
         total += 1
-        if not (base / p).exists():
+        rp = (base / p).resolve()
+        refs.append((f, p, str(rp)))
+        if not rp.exists():
             missing.append((f, p))
+# 反向：assets 目录内未被引用的图片
+referenced = set(r[2].lower() for r in refs)
+orphan = [x.name for x in pathlib.Path('.gitbook/assets').glob('*') if str(x.resolve()).lower() not in referenced]
+# 大小写错位：引用写法与磁盘真实大小写不一致（Windows 大小写不敏感，Linux 构建会 404）
+case_bad = []
+for f, p, _ in refs:
+    cur = pathlib.Path(f).parent
+    for seg in pathlib.PurePosixPath(p).parts:
+        cur = cur / seg
+        if cur.exists() and cur.name != seg:
+            case_bad.append((f, p))
 print('total image refs', total, 'missing', len(missing))
-for x in missing:
+print('orphan assets', len(orphan), orphan)
+print('case mismatches', len(case_bad))
+for x in missing + case_bad:
     print(x)
 EOF
 ```
 
-预期：`missing 0`。`AGENTS.md` 中的 `xxx.png` 是写法示例，不在扫描范围内。
+预期：`missing 0`、`orphan assets 0`、`case mismatches 0`。三条硬性要求（2026-10-21 用户下达）：①图片**必须被引用，不得悬空**（`orphan 0`）；②引用**必须能解析到本地文件**，不得指向外链或缺失（`missing 0`）；③**必须本地化**——图片存放于仓库内 `.gitbook/assets/`，不使用外部 URL；且因 Windows 大小写不敏感，引用写法须与磁盘真实文件名**逐字符大小写一致**（`case mismatches 0`），否则 Linux 构建或 GitBook 渲染会 404。`AGENTS.md` 中的 `xxx.png` 是写法示例，不在扫描范围内。
 
 ### CP-G8 空页与存根页
 

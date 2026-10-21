@@ -202,18 +202,18 @@
 
 | 英文书名 | 采用中译名 | 中译本出处 |
 | -------- | ---------- | ---------- |
-| The C Programming Language | 《C程序设计语言》 | 机械工业出版社 |
+| The C Programming Language | 《C 程序设计语言》 | 机械工业出版社 |
 | The C++ Programming Language | 《C++程序设计语言》 | 机械工业出版社 |
-| The AWK Programming Language | 《AWK程序设计语言》 | 机械工业出版社 2026 |
-| C: A Reference Manual | 《C语言参考手册》 | 机械工业出版社 |
-| The C Answer Book | 《C程序设计语言习题解答》 | 机械工业出版社 |
-| The C Puzzle Book | 《C语言解惑》 | 人民邮电出版社 |
-| Advanced UNIX Programming | 《高级UNIX编程》 | 机械工业出版社 2006 |
-| The UNIX Programming Environment | 《UNIX编程环境》 | 机械工业出版社 1999／人民邮电 2014 |
-| Design of the UNIX Operating System | 《UNIX操作系统设计》 | 机械工业出版社 2000 |
+| The AWK Programming Language | 《AWK 程序设计语言》 | 机械工业出版社 2026 |
+| C: A Reference Manual | 《C 语言参考手册》 | 机械工业出版社 |
+| The C Answer Book | 《C 程序设计语言习题解答》 | 机械工业出版社 |
+| The C Puzzle Book | 《C 语言解惑》 | 人民邮电出版社 |
+| Advanced UNIX Programming | 《高级 UNIX 编程》 | 机械工业出版社 2006 |
+| The UNIX Programming Environment | 《UNIX 编程环境》 | 机械工业出版社 1999／人民邮电 2014 |
+| Design of the UNIX Operating System | 《UNIX 操作系统设计》 | 机械工业出版社 2000 |
 | Operating Systems: Design and Implementation | 《操作系统：设计及实现》 | 第 2 版中译本 |
-| Operating System Design: The XINU Approach | 《操作系统设计：Xinu方法》 | 机械工业出版社 2013/2019 |
-| The UNIX Operating System (Kaare Christian) | 《UNIX操作系统》 | 电子工业出版社 1986/1991 |
+| Operating System Design: The XINU Approach | 《操作系统设计：Xinu 方法》 | 机械工业出版社 2013/2019 |
+| The UNIX Operating System (Kaare Christian) | 《UNIX 操作系统》 | 电子工业出版社 1986/1991 |
 
 无中文译本、保持英文：Software Tools、Life with UNIX、The Design and Implementation of the 4.3BSD UNIX Operating System（仅德译/日译）、Introducing the UNIX System（仅德译）、A Commentary on the UNIX Operating System（1977 两卷本未正式出版）、Introduction to Compiler Construction with UNIX、Portable C and UNIX System Programming、User Guide to the UNIX System、Advanced Programmer's Guide to UNIX System V、The UNIX System (Bourne)、UNIX System Administration、X/OPEN Portability Guide、Nutshell Handbooks（系列名）、UNIX for People、Big Blue、UNIX System Security、UNIX Survival Guide、The Korn Shell Command and Programming Language、Introduction to UNIX / UNIX Programming / Password Security: A Case History（贝尔实验室内部文集）。
 
@@ -221,9 +221,9 @@
 
 | 英文原名 | 采用中译名 | 依据 |
 | -------- | ---------- | ---- |
-| Communications of the ACM | 《ACM通讯》 | ACM 官方中文版刊名 |
+| Communications of the ACM | 《ACM 通讯》 | ACM 官方中文版刊名 |
 | Byte | 《字节》 | 中文文献通行 |
-| The UNIX Time-Sharing System (Thompson & Ritchie, 1974) | 《UNIX分时系统》 | 中文文献通行译名 |
+| The UNIX Time-Sharing System (Thompson & Ritchie, 1974) | 《UNIX 分时系统》 | 中文文献通行译名 |
 | Whole Earth Catalog | 《全球概览》 | 中文通行 |
 
 保持英文：IEEE Computer、UNIX REVIEW、UNIXWORLD、The C Users Journal、;login:、Computing Systems、CommUNIXations、UNIX Bulletins、Operating Systems Review、Micro C、Government Computer News、DEC Pro Extra、UNIX Readings、Notable Computer Networks 及其余论文/文章/手册名。
