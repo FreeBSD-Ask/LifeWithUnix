@@ -232,4 +232,20 @@
 
 Microsoft→微软；Hewlett-Packard→惠普（缩写 HP 保留）；Apple→苹果；Xerox→施乐；Intel→英特尔；Motorola→摩托罗拉；Sony→索尼（Sony Microsystems 商号整体保留）；Toshiba→东芝（Toshiba America→东芝美国）；Compaq→康柏；Honeywell→霍尼韦尔；Western Electric→西方电气公司（缩写 WECo 保留）；McGraw-Hill→麦格劳-希尔；Addison-Wesley→艾迪生-韦斯利；National Semiconductor→国家半导体公司；Amdahl→阿姆达尔；Cray→克雷。
 
-保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Prentice-Hall、Wiley、Hayden、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注。
+保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注。
+
+### 出版社（2026-10-21 复核修订）
+
+| 英文原名 | 采用中译名 | 依据 |
+| -------- | ---------- | ---- |
+| Prentice-Hall | 普伦蒂斯-霍尔（Prentice-Hall） | 《培生大事记》官方作“普伦蒂斯·霍尔”；国家教育研究院《图书馆学与资讯科学大辞典》收录“Prentice-Hall 出版公司”；本书从“麦格劳-希尔”体例统一用连字符 |
+| McGraw-Hill | 麦格劳-希尔（McGraw-Hill） | 中译本版权页通行（本书已用） |
+| Addison-Wesley | 艾迪生-韦斯利（Addison-Wesley） | 中译本版权页通行（本书已用） |
+| John Wiley & Sons / Wiley Interscience | 约翰威立（Wiley Interscience） | Wiley 中国官方自称“约翰威立国际出版公司” |
+| O'Reilly & Associates | 奥莱利（O'Reilly & Associates） | O'Reilly 中国官方“奥莱利技术咨询（北京）有限公司” |
+| University of California Press | 加州大学出版社（University of California Press） | 维基百科中文版及国内馆藏资料通行 |
+| International Data Corporation | 国际数据公司（IDC） | IDC 中国通行中文名 |
+
+采用规则：4.5/4.6 的“出版：”字段作“中文（English）”式（沿用麦格劳-希尔等既有体例）；行文处一律用中文名；附录 A 地址名录内所有机构名保持英文原名（供对查）。
+
+保持英文（译名不统一或非商业出版机构）：Holt, Rinehart and Winston、Hayden Book Company、Howard Press、Yates Ventures、Ziff Communications、Tech Valley Publishing、Miller Freeman、Owens-Liang Publications、InfoPro Systems、R&D Publications、Marvin L. Rosenfeld、Patricia Seybold’s Office Computing Group（人名冠名机构）、AT&T Information Systems、USENIX Association、UniPress Software、Transmediair Utrecht BV。

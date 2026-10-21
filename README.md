@@ -22,7 +22,7 @@
 
 * 书名：Life With UNIX: A Guide For Everyone
 * 作者：Don Libes、Sandy Ressler
-* 出版：Prentice Hall，Englewood Cliffs, New Jersey，1989 年 4 月
+* 出版：普伦蒂斯-霍尔（Prentice Hall），Englewood Cliffs, New Jersey，1989 年 4 月
 * ISBN：0-13-536657-7
 * 页数：372 页
 * UNIX 是 AT&T 的注册商标
