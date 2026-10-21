@@ -2,7 +2,7 @@
 
 本项目是《UNIX 生活：写给每个人的指南》（*Life With UNIX: A Guide For Everyone*）的简体中文翻译，由 FreeBSD 中文社区译制。
 
-**翻译状态**：全书初译完成（2026 年 10 月），共 129 个页面；结构、引号与 markdownlint 检查均通过。校对进展见 [CHANGELOG.md](CHANGELOG.md)，术语以 [术语表](yi-zhe-shuo-ming.md) 为准。
+**翻译状态**：全书初译与逐句回校均已完成（2026 年 10 月），共 129 个页面。已按 U00–U13 共 14 个单元完成 R1 准确性、R2 语言、R3 术语与格式三轮校对加一轮完整复查，并另起一轮全书通读复核；结构、引号、markdownlint、章节结构与图片引用检查均通过。校对进展与逐轮明细见 [CHANGELOG.md](CHANGELOG.md)，术语以 [术语表](yi-zhe-shuo-ming.md) 为准。
 
 ---
 
