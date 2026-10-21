@@ -1,11 +1,11 @@
 # 进度书
 
 > 最后更新：2026-10-21
-> 最近内容提交：`87e6105`（外部钩子提交链最新）；其后的通读轮 U06 与本进度书更新以 `git log` 为准
-> 工作树：仅本进度书待钩子提交
-> 当前任务：全书通读轮（手工串行）——逐句对照 `en/` 原文，只处理新问题、不复查旧错；已完成 U00–U06；专名中译规则执行完毕
-> 当前轮次：通读轮 U07 待开始
-> 下一步：U07（第 7 章，7 文件）→ U08 → …… → U13，按单元顺序推进；后续单元以术语表“著名专名中译”清单为新口径
+> 最近内容提交：`4195f55`（外部钩子提交链最新）；其后的通读轮 U07/U08 与本进度书更新以 `git log` 为准
+> 工作树：含第 7、8 章通读轮修改与本进度书更新，待钩子提交
+> 当前任务：全书通读轮（手工串行，经用户改为禁用子代理）——逐句对照 `en/` 原文，只处理新问题、不复查旧错；已完成 U00–U08；专名中译规则执行完毕
+> 当前轮次：通读轮 U09 待开始
+> 下一步：U09（第 9 章 地下世界，5 文件）→ U10 → …… → U13，按单元顺序推进；后续单元以术语表“著名专名中译”清单为新口径
 
 ## -1. 专名中译规则执行（2026-10-20 晚，主代理）
 
@@ -30,6 +30,8 @@
 * U04 第 4 章：完成，1 处修改（3 个标题）：4.1.1 三篇文集标题原译成中文（《UNIX 入门》《UNIX 程序设计》《口令安全：一则案例》），违反 CP-U04“书名保持原文”检查点，恢复为《Introduction to UNIX》、“UNIX Programming”、《Password Security: A Case History》（4.2 中 Lions 书名即保持英文，体例佐证）。其后按用户新规则（书名有中译本则用中文）复核：其中《The Design of the UNIX Operating System》《Operating Systems: Design and Implementation》《Operating System Design: The XINU Approach》三书有中译本，已在专名统一轮改为《UNIX操作系统设计》《操作系统：设计及实现》《操作系统设计：Xinu方法》；三篇贝尔实验室内部文集（Introduction to UNIX / UNIX Programming / Password Security: A Case History）经检索无中译本，仍保持英文。其余全量核对：945 行原文逐句对照；4.5 的 29 条书目、4.6 的 15 种期刊逐条核对（评分数据今日下午已经矢量几何全量复核，维持不变）；4.1 的 8 节表格、YACHESS 手册页、man 宏框、4.2 的 /usr/src 目录树、4.3 的 4 家书店、4.4 的速查卡清单均无遗漏。检查：引号 0、lint 0（7 文件）。
 * U05 第 5 章：完成，0 处修改。343 行原文逐句对照：五种会议（UniForum／USENIX／EUUG／UNIXEXPO／UNICORN）与全部价格数字（$40/$120/$115/$195、$100/$300/$325、$1,000）核对无误；1986 年 AT&T 调查 11 项无误；赠品清单 20 余项逐项核对。两处回 PDF 原图裁定：①书页 121 徽章归属（Unknown→OS/2、name withheld→VAX/VMS）中文正确，en/ 线性抽取顺序误导；②书页 120 RTFM 徽章确有大字 RTFM 环绕 "Your guru says:"/"Read the manual!"，David Yost 双箭头连 RTFM 与 MS-DOS 两枚，中文转录忠实。原书自身矛盾（CommUNIXations 月刊/双月刊）照录不改。检查：引号 0、lint 0（5 文件）。
 * U06 第 6 章：完成，0 处修改。543 行原文与 5 个中文文件逐句对照。三处疑点回 PDF 裁定：①IIASA 拼写与位置（书页 153）与原文一致；②6.3 文件树（书页 143）逐节点核对——bin→ls/cat、etc→passwd、lib→cpp/libc.a、usr→don/sandy/lib/local、don→books/articles、books→lwu、local→bin、dev 与 bin 等平级，中文文本树完全吻合；③make 条目（"compiling, lexing, yaccing"）译“编译、lex、yacc 等等”属实。此外核对：《The Korn Shell Command and Programming Language》（Korn & Bolsky）经检索无中译本，保持英文；全部命令条目词源（cd/cp/df/du/find/ls/mkdir/mv/pwd/rm/which、cat/diff/echo/ed/file/grep/head/more/od/sed/sort/strings/tail/vi、adb/a.out/awk/cc/make/sdb/sh、date/kill/mail/man/ps/who）逐条比对无遗漏；remove-user 脚本四段代码与完整版逐行核对一致（`set -e`、test 判断、awk 取第六字段、反引号、here-doc、rm -fr）。检查：引号 0、lint 0（6 文件）。
+* U07 第 7 章：完成，2 处修改：7.2.2 “简单键值数据库”改“简单键控数据库”（违反术语表既定条目 keyed record→键控记录，11.7 已用“键控”，此处漏改）；7.1.1.6 “只提供小到一秒的定时精度”改“定时精度只到一秒”（原文 resolutions down to one second，原译表述生硬）。其余全量核对：599 行原文逐句对照；书中插图（7.1.1 系统调用分层图）文本化处理正确；7.2.3 的 #define/#include 代码、7.3.4 的 yacc 文法片段、7.1.2 exec/fork/wait 调用说明、信号一节与 4.2BSD 兼容性叙述逐条核对一致；《Introduction to Compiler Construction with UNIX》（Schreiner & Friedman）经检索无中译本，保持英文；《C程序设计语言》中译本用法正确；overkill 三处（2.9 选型、3. 章首、7.2.1）分别译“杀鸡用牛刀/杀鸡用了牛刀/过度”，符合语境差异，非口径不一。检查：引号 0、lint 0（5 文件）。
+* U08 第 8 章：完成，1 处修改：8.4.1 信息框边界错误——原书页 204 目视裁定，Semicolon-login:? 框内仅含两段（"As you might suspect…" 与 "Well, the string that getty prompted…"），其后三段（"The nice thing about…"、"Annoyingly…"、"Of course, we cannot condone…"）在框外正文；中文版误将三段并入框内，已移出。其余全量核对：579 行原文逐句对照；8.1.2 引导五步、8.2.2 fsck 两篇文章（Saxon/;login: 10(3)、McKusick/4.2BSD 手册）、8.2.3 洞文件框（26 盘 40 MB 磁带 vs 1 GB 文件/146 MB 分区）、8.4.2 TERMCAP 框边界（书页 205 目视复核正确）、8.5.1 口令文件七字段与 GCOS 由来、8.7.3 setuid 专利页转录（译注体例，既定处理）、8.7.4 与 12.12 的 Stoll 文章呼应，均核对无误；arp 字段组（/etc/group 样例 admin:q3gn89:16:carol,henry,joe,tony,gail）、xargs 两条示例命令、kill -9 17 示例逐字符核对一致。检查：引号 0、lint 0（8 文件）。
 
 ## 1. 总览
 
