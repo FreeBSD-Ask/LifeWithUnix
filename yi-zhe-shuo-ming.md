@@ -238,7 +238,9 @@ Microsoft→微软；Hewlett-Packard→惠普（缩写 HP 保留）；Apple→�
 * Cray 作公司译“克雷”，作机型保持 Cray-2。
 * Xerox／Apple 在任何叙述语境均译“施乐／苹果”（施乐 Alto、施乐公司、苹果 Macintosh）；仅附录 A 机构名与产品名 Appletalk、Macintosh 保持英文。
 
-保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注。
+保持英文（中文无通行译名或原名即通行）：IBM、AT&T、DEC、Sun／Sun Microsystems、Data General、NCR、Unisys、Gould、Apollo、Sequent、Tandy、Interactive Systems、Wollongong、Convex、Tektronix、Silicon Graphics、Pixar、Masscomp、Intergraph、Prime Computer、SCO、MITI 已译注；另有 12.4 容错/实时领域厂商 Origin Corporation、Sequoia Systems、Tolerant Systems、Stratus、Parallel Computers（2026-10-26 U12 复核裁定，中文无通行译名，保持英文）。
+
+其他专名（2026-10-26 增补）：BRL＝Army Ballistic Research Laboratory，译“弹道研究实验室”（缩写 BRL 保留）；Phoenix 作地名译“菲尼克斯”（1987 年 USENIX 会议地）。
 
 ### 出版社（2026-10-21 复核修订）
 
