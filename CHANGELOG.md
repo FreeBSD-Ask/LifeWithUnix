@@ -12,7 +12,7 @@
 * 复核轮典型修正：方向性误译（1.6 licenser）、漏译（3.1 “in addition to the first three mentioned”、11.13 “different machines”、12.4 “after a crash”）、搭配与欧化句式、代码块排版还原（原书换行结构照录）。
 * 全书终检（CP-G1–G8）：引号 0、markdownlint 0（132 文件）、脚注配对 0 缺失、加粗空格 0、图片 CP-G7 双向通过、中英结构 188 节差异 0、H1 与 SUMMARY 全部一致。
 * 术语表增补：12.4 领域厂商（Origin Corporation、Sequoia Systems、Tolerant Systems、Stratus、Parallel Computers）保持英文裁定，BRL＝弹道研究实验室、Phoenix＝菲尼克斯。
-* 遗留事项（供后续裁定）：附录 A 的 337 条条目顺序沿袭 en 提取文件的双栏交错序，与 PDF 版面阅读顺序（每页先左栏后右栏）不同，属结构性变更，未改动；11.11 的“图形趋势”为原书无编号小节，现作加粗段落处理，如需改 H2 待裁定。
+* 三项用户裁定（2026-10-26 晚）落地：①附录 A 的 337 条条目按 PDF 版面阅读顺序（每页先左栏后右栏）整体重排——从 PDF 记号流逐条唯一匹配、首尾相接无缝覆盖校验通过，296 条归位；②11.11 的“图形趋势”由加粗段落提升为无编号 H2（原书该小节无编号）；③10.6.2 RAJAH 漫画补全调查：下载 TUHS 档案作者捐赠的第一版印次电子版（Life with Unix.pdf），同一位置同样只有占位文字——即作者提供的任何电子版都未置入该漫画；archive.org 纸本扫描（lifewithunixguid0000libe）借阅锁定、Google Books 纸本扫描（bH4hAQAAIAAJ）无第 254 页预览、PC Mag 1984 全 25 期与 Microsystems 1984 全 13 期全文检索均无 RAJAH，原始漫画无法定位。译注据新证据更新为：付印依据的 camera-ready 副本即含占位文字，纸本大概率同样印出占位。
 
 ## 2026-10-26（更早）
 
